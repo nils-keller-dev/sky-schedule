@@ -4,10 +4,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node dist/server.js",
     "dev": "nodemon src/server.ts --exec ts-node src/server.ts",
     "build": "tsc",
-    "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },  
   "keywords": [],
