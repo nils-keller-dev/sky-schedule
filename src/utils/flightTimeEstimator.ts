@@ -49,10 +49,12 @@ const calculateEstimatedTimes = (
 
   const distanceToTargetKm = calculateDistance(flight, targetPos)
   const timeToTargetHours = distanceToTargetKm / groundSpeedKmh
-  const millisUntilEntry =
+  const millisUntilEntry = Math.round(
     distanceToTargetKm <= radiusKm ? 0 : timeToTargetHours * 3600 * 1000
-  const millisUntilExit =
+  )
+  const millisUntilExit = Math.round(
     millisUntilEntry + (radiusKm / groundSpeedKmh) * 3600 * 1000
+  )
 
   return {
     millisUntilEntry,

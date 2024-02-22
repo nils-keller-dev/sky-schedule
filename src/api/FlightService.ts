@@ -11,19 +11,21 @@ export const getVisibleFlights = async (
   latitude: number,
   longitude: number,
   searchRadius: number,
-  visibilityRadius: number
+  visibilityRadius: number,
+  maxAltitude = Infinity
 ) => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
 
   return flights
     .filter(
-      (flight: Flight) => !flight.onGround || !flight.destinationAirportIata
+      (flight: Flight) => !flight.onGround && flight.altitude < maxAltitude
     )
     .map((flight: Flight) =>
       processFlight(flight, latitude, longitude, visibilityRadius)
     )
     .filter((result: Response) => result)
+    .sort((a: Response, b: Response) => a.millisUntilEntry - b.millisUntilEntry)
 }
 
 const processFlight = (

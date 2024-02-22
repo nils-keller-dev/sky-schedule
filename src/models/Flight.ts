@@ -7,4 +7,5 @@ export interface Flight extends Location {
   originAirportIata?: string
   destinationAirportIata?: string
   onGround: number
+  altitude: number
 }
