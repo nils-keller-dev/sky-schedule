@@ -1,6 +1,7 @@
 import fastify from 'fastify'
 import { FlightRadar24API } from 'flightradarapi'
-import airports from '../airports.json'
+import airports from './data/airports.json'
+import { Airport } from './models/Airport'
 import { Flight } from './models/Flight'
 import { Response } from './models/Response'
 import calculateTimeToReach from './utils/routeCalculation'
@@ -13,41 +14,44 @@ const routeOptions = {
     querystring: {
       type: 'object',
       properties: {
-        lat: { type: 'number' },
-        long: { type: 'number' },
-        radius: { type: 'number' },
+        location: { type: 'string' },
+        searchRadius: { type: 'number' },
+        visibilityRadius: { type: 'number' },
       },
-      required: ['lat', 'long', 'radius'],
+      required: ['location', 'searchRadius', 'visibilityRadius'],
     },
   },
 }
 
 interface BoundsQuery {
-  lat: number
-  long: number
-  radius: number
+  location: string
+  searchRadius: number
+  visibilityRadius: number
 }
 
 app.get<{ Querystring: BoundsQuery }>(
   '/',
   routeOptions,
-  async ({ query: { lat, long, radius } }) => {
-    const bounds = frApi.getBoundsByPoint(lat, long, radius)
+  async ({ query: { location, searchRadius, visibilityRadius } }) => {
+    const requestTime = Date.now()
+
+    const [lat, long] = location.split(',').map(Number)
+    const bounds = frApi.getBoundsByPoint(lat, long, searchRadius)
     const flights = await frApi.getFlights(null, bounds)
+
     console.log(flights)
 
     const calculatedTimes = flights
       .filter((e: Flight) => !e.onGround || !e.destinationAirportIata)
       .map((f: Flight) => {
-        // @ts-ignore
-        const airportOrigin = airports[f.originAirportIata]
-        // @ts-ignore
-        const airportDestination = airports[f.destinationAirportIata]
+        if (!f.originAirportIata || !f.destinationAirportIata) return null
 
-        if (!airportDestination?.latitude) {
-          // TODO try to check if the plane will pass the target without knowing where its going just based on heading and currentPos
-          return
-        }
+        const airportOrigin: Airport =
+          airports[f.originAirportIata as keyof typeof airports]
+        const airportDestination: Airport =
+          airports[f.destinationAirportIata as keyof typeof airports]
+
+        if (!airportOrigin || !airportDestination) return null
 
         const timeToReach = calculateTimeToReach(
           f,
@@ -59,11 +63,13 @@ app.get<{ Querystring: BoundsQuery }>(
             latitude: lat,
             longitude: long,
           },
-          2.5
+          visibilityRadius
         )
 
+        if (timeToReach === null) return null
+
         return {
-          timeToReach,
+          id: f.id,
           airportOrigin: {
             city: airportOrigin.city,
             country: airportOrigin.country,
@@ -72,10 +78,12 @@ app.get<{ Querystring: BoundsQuery }>(
             city: airportDestination.city,
             country: airportDestination.country,
           },
+          estimatedEntryTime: timeToReach,
+          estimatedExitTime: 0,
+          requestTime,
         }
       })
-      .filter((r: Response) => r)
-      .filter((r: Response) => r.timeToReach !== null)
+      .filter((r: Response | null) => r)
 
     return { flights: calculatedTimes }
   }

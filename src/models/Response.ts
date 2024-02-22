@@ -1,5 +1,14 @@
 export interface Response {
   timeToReach: number | null
-  originAirportName: string
-  originCountry: string
+  airportOrigin: {
+    city: string
+    country: string
+  }
+  airportDestination: {
+    city: string
+    country: string
+  }
+  estimatedEntryTime: number
+  estimatedExitTime: number
+  requestTime: number
 }
