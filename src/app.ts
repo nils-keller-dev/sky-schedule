@@ -1,5 +1,5 @@
 import fastify from 'fastify'
-import { getVisibleFlights } from './api/FlightService'
+import { getVisibleFlights } from './api/flightService'
 
 const app = fastify({ logger: true })
 

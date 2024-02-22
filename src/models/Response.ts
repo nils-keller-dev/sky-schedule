@@ -8,7 +8,6 @@ export interface Response {
     city?: string
     country: string
   }
-  estimatedEntryTime: number
-  estimatedExitTime: number
-  requestTime: number
+  millisUntilEntry: number
+  millisUntilExit: number
 }

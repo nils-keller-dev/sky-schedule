@@ -3,7 +3,7 @@ import airports from '../data/airports.json'
 import { Airport } from '../models/Airport'
 import { Flight } from '../models/Flight'
 import { Response } from '../models/Response'
-import calculateTimeToReach from '../utils/routeCalculation'
+import calculateEstimatedTimes from '../utils/flightTimeEstimator'
 
 const frApi = new FlightRadar24API()
 
@@ -41,30 +41,17 @@ const processFlight = (
 
   if (!airportOrigin || !airportDestination) return null
 
-  // const { estimatedEntryTime, estimatedExitTime } = calculateEstimatedTimes(
-  //   flight,
-  //   {
-  //     latitude: airportDestination.latitude,
-  //     longitude: airportDestination.longitude,
-  //   },
-  //   { latitude, longitude },
-  //   visibilityRadius
-  // )
-
-  const timeToReach = calculateTimeToReach(
+  const { millisUntilEntry, millisUntilExit } = calculateEstimatedTimes(
     flight,
     {
       latitude: airportDestination.latitude,
       longitude: airportDestination.longitude,
     },
-    {
-      latitude,
-      longitude,
-    },
+    { latitude, longitude },
     visibilityRadius
   )
 
-  if (timeToReach === null) return null
+  if (millisUntilEntry === null || millisUntilExit === null) return null
 
   return {
     id: flight.id,
@@ -76,8 +63,7 @@ const processFlight = (
       city: airportDestination.city,
       country: airportDestination.country,
     },
-    estimatedEntryTime: timeToReach,
-    estimatedExitTime: timeToReach,
-    requestTime: Date.now(),
+    millisUntilEntry,
+    millisUntilExit,
   }
 }
