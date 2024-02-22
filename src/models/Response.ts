@@ -1,6 +1,6 @@
 export interface Response {
   id: string
-  airportOrigin: {
+  airportOrigin?: {
     city?: string
     country: string
   }

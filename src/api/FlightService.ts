@@ -36,12 +36,12 @@ const processFlight = (
 ): Response | null => {
   if (!flight.originAirportIata || !flight.destinationAirportIata) return null
 
-  const airportOrigin: Airport =
+  const airportOrigin: Airport | undefined =
     airports[flight.originAirportIata as keyof typeof airports]
   const airportDestination: Airport =
     airports[flight.destinationAirportIata as keyof typeof airports]
 
-  if (!airportOrigin || !airportDestination) return null
+  if (!airportDestination) return null
 
   const { millisUntilEntry, millisUntilExit } = calculateEstimatedTimes(
     flight,
@@ -57,10 +57,12 @@ const processFlight = (
 
   return {
     id: flight.id,
-    airportOrigin: {
-      city: airportOrigin.city,
-      country: airportOrigin.country,
-    },
+    airportOrigin: airportOrigin
+      ? {
+          city: airportOrigin.city,
+          country: airportOrigin.country,
+        }
+      : undefined,
     airportDestination: {
       city: airportDestination.city,
       country: airportDestination.country,
