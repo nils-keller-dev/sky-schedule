@@ -1,5 +1,5 @@
 import fastify from 'fastify'
-import { getVisibleFlights } from './api/flightService'
+import { getClosestFlight } from './api/flightService'
 
 const app = fastify({ logger: true })
 
@@ -30,7 +30,7 @@ app.get<{ Querystring: BoundsQuery }>(
     const { location, radius, maxAltitude } = request.query
     const [latitude, longitude] = location.split(',').map(Number)
 
-    return await getVisibleFlights(latitude, longitude, radius, maxAltitude)
+    return await getClosestFlight(latitude, longitude, radius, maxAltitude)
   }
 )
 

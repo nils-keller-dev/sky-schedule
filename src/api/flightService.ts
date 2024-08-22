@@ -7,7 +7,7 @@ const frApi = new FlightRadar24API()
 
 type ProcessedFlight = Response & { distance: number }
 
-export const getVisibleFlights = async (
+export const getClosestFlight = async (
   latitude: number,
   longitude: number,
   searchRadius: number,
