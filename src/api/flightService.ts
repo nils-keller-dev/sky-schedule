@@ -43,10 +43,8 @@ const processFlight = (
   const distance = flight.getDistanceFrom({ latitude, longitude } as Entity)
 
   return {
-    airportOrigin: {
-      city: airportOrigin.city,
-      country: airportOrigin.country,
-    },
+    city: airportOrigin.city,
+    country: airportOrigin.country,
     distance,
   }
 }

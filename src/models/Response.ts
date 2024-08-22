@@ -1,6 +1,4 @@
 export interface Response {
-  airportOrigin?: {
-    city?: string
-    country: string
-  }
+  city?: string
+  country: string
 }
