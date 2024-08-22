@@ -1,73 +1,52 @@
-import { FlightRadar24API } from 'flightradarapi'
+import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
 import airports from '../data/airports.json'
 import { Airport } from '../models/Airport'
-import { Flight } from '../models/Flight'
 import { Response } from '../models/Response'
-import calculateEstimatedTimes from '../utils/flightTimeEstimator'
 
 const frApi = new FlightRadar24API()
+
+type ProcessedFlight = Response & { distance: number }
 
 export const getVisibleFlights = async (
   latitude: number,
   longitude: number,
   searchRadius: number,
-  visibilityRadius: number,
   maxAltitude = Infinity
 ) => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
 
-  return flights
-    .filter(
-      (flight: Flight) => !flight.onGround && flight.altitude < maxAltitude
-    )
-    .map((flight: Flight) =>
-      processFlight(flight, latitude, longitude, visibilityRadius)
-    )
-    .filter((result: Response) => result)
-    .sort((a: Response, b: Response) => a.millisUntilEntry - b.millisUntilEntry)
+  const closestPlane = flights
+    .filter((flight) => !flight.onGround && flight.altitude < maxAltitude)
+    .map((flight) => processFlight(flight, latitude, longitude))
+    .filter((result: ProcessedFlight | null) => result !== null)
+    .sort(
+      (a: ProcessedFlight, b: ProcessedFlight) => a.distance - b.distance
+    )[0]
+
+  return {
+    ...closestPlane,
+    distance: undefined,
+  }
 }
 
 const processFlight = (
   flight: Flight,
   latitude: number,
-  longitude: number,
-  visibilityRadius: number
-): Response | null => {
-  if (!flight.originAirportIata || !flight.destinationAirportIata) return null
-
+  longitude: number
+): ProcessedFlight | null => {
   const airportOrigin: Airport | undefined =
     airports[flight.originAirportIata as keyof typeof airports]
-  const airportDestination: Airport =
-    airports[flight.destinationAirportIata as keyof typeof airports]
 
-  if (!airportDestination) return null
+  if (!airportOrigin) return null
 
-  const { millisUntilEntry, millisUntilExit } = calculateEstimatedTimes(
-    flight,
-    {
-      latitude: airportDestination.latitude,
-      longitude: airportDestination.longitude,
-    },
-    { latitude, longitude },
-    visibilityRadius
-  )
-
-  if (millisUntilEntry === null || millisUntilExit === null) return null
+  const distance = flight.getDistanceFrom({ latitude, longitude } as Entity)
 
   return {
-    id: flight.id,
-    airportOrigin: airportOrigin
-      ? {
-          city: airportOrigin.city,
-          country: airportOrigin.country,
-        }
-      : undefined,
-    airportDestination: {
-      city: airportDestination.city,
-      country: airportDestination.country,
+    airportOrigin: {
+      city: airportOrigin.city,
+      country: airportOrigin.country,
     },
-    millisUntilEntry,
-    millisUntilExit,
+    distance,
   }
 }

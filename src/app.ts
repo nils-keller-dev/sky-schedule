@@ -9,40 +9,28 @@ const routeOptions = {
       type: 'object',
       properties: {
         location: { type: 'string' },
-        searchRadius: { type: 'number', minimum: 1 },
-        visibilityRadius: { type: 'number', minimum: 1 },
+        radius: { type: 'number', minimum: 1 },
         maxAltitude: { type: 'number', minimum: 0 },
       },
-      required: ['location', 'searchRadius', 'visibilityRadius'],
+      required: ['location', 'radius'],
     },
   },
 }
 
 interface BoundsQuery {
   location: string
-  searchRadius: number
-  visibilityRadius: number
+  radius: number
   maxAltitude?: number
 }
 
 app.get<{ Querystring: BoundsQuery }>(
-  '/flights',
+  '/closestPlane',
   routeOptions,
   async (request) => {
-    const { location, searchRadius, visibilityRadius, maxAltitude } =
-      request.query
-
+    const { location, radius, maxAltitude } = request.query
     const [latitude, longitude] = location.split(',').map(Number)
 
-    const visibleFlights = await getVisibleFlights(
-      latitude,
-      longitude,
-      searchRadius,
-      visibilityRadius,
-      maxAltitude
-    )
-
-    return { flights: visibleFlights }
+    return await getVisibleFlights(latitude, longitude, radius, maxAltitude)
   }
 )
 
