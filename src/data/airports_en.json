@@ -88,7 +88,7 @@
     "city": "Samarinda"
   },
   "AAQ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 45.0021018982,
     "longitude": 37.3473014832,
     "city": "Anapa"
@@ -135,7 +135,7 @@
     "city": "Quetzaltenango"
   },
   "ABA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.7400016785,
     "longitude": 91.3850021362,
     "city": "Abakan"
@@ -153,7 +153,7 @@
     "city": "Albacete"
   },
   "ABD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 30.371099472,
     "longitude": 48.2282981873,
     "city": "Abadan"
@@ -187,7 +187,7 @@
     "city": "Abilene"
   },
   "ABJ": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 5.2613902092,
     "longitude": -3.9262900352,
     "city": "Abidjan"
@@ -329,7 +329,7 @@
     "city": "Ciudad Acuna"
   },
   "ACP": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 37.3479995728,
     "longitude": 46.1278991699,
     "city": "Maragheh"
@@ -341,7 +341,7 @@
     "city": "Araracuara"
   },
   "ACS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.2682991028,
     "longitude": 90.5708007813,
     "city": "Achinsk"
@@ -371,7 +371,7 @@
     "city": "Atlantic City"
   },
   "ACZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 31.0983009338,
     "longitude": 61.5438995361
   },
@@ -418,7 +418,7 @@
     "city": "Adrian"
   },
   "ADH": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.6027984619,
     "longitude": 125.408996582,
     "city": "Aldan"
@@ -489,7 +489,7 @@
     "city": "Ada"
   },
   "ADU": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 38.3256988525,
     "longitude": 48.4244003296,
     "city": "Ardabil"
@@ -560,7 +560,7 @@
     "city": "Buenos Aires"
   },
   "AER": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.4499015808,
     "longitude": 39.9566001892,
     "city": "Sochi"
@@ -578,7 +578,7 @@
     "city": "Allakaket"
   },
   "AEU": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 25.8756999969,
     "longitude": 55.033000946
   },
@@ -661,7 +661,7 @@
     "city": "Afyonkarahisar"
   },
   "AFZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.1680984497,
     "longitude": 57.595199585,
     "city": "Sabzevar"
@@ -969,7 +969,7 @@
     "city": "Akjoujt"
   },
   "AJK": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 34.1380996704,
     "longitude": 49.8473014832,
     "city": "Araak"
@@ -1028,7 +1028,7 @@
     "longitude": 77.0586013794
   },
   "AKF": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 24.1786994934,
     "longitude": 23.313999176,
     "city": "Kufra"
@@ -1212,7 +1212,7 @@
     "city": "Waterloo"
   },
   "ALP": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 36.1806983948,
     "longitude": 37.2243995667,
     "city": "Aleppo"
@@ -1353,7 +1353,7 @@
     "city": "Amanab"
   },
   "AMV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 69.7632980347,
     "longitude": 61.5564002991,
     "city": "Amderma"
@@ -1418,7 +1418,7 @@
     "city": "Aniak"
   },
   "ANJ": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -2.8499999046,
     "longitude": 13.8170003891,
     "city": "Zanaga"
@@ -1573,7 +1573,7 @@
     "city": "Aosta"
   },
   "AOU": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 14.814715357,
     "longitude": 106.821699142,
     "city": "Attopeu"
@@ -1783,7 +1783,7 @@
     "city": "Walnut Ridge"
   },
   "ARH": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.6003036499,
     "longitude": 40.7167015076,
     "city": "Archangelsk"
@@ -1901,7 +1901,7 @@
     "city": "Aspen"
   },
   "ASF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 46.2832984924,
     "longitude": 48.0063018799,
     "city": "Astrakhan"
@@ -1930,7 +1930,7 @@
     "city": "Amami"
   },
   "ASK": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.9031701088,
     "longitude": -5.3655800819,
     "city": "Yamoussoukro"
@@ -2222,7 +2222,7 @@
     "city": "Austin"
   },
   "AUT": {
-    "country": "Timor-Leste",
+    "country": "East Timor",
     "latitude": -8.2105197906,
     "longitude": 125.6159973145,
     "city": "Atauro"
@@ -2373,7 +2373,7 @@
     "longitude": 137.75
   },
   "AWZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 31.3374004364,
     "longitude": 48.7620010376,
     "city": "Ahwaz"
@@ -2545,7 +2545,7 @@
     "city": "Phoenix"
   },
   "AZD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 31.9048995972,
     "longitude": 54.2765007019,
     "city": "Yazd"
@@ -2650,7 +2650,7 @@
     "city": "Battle Mountain"
   },
   "BAN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.3169999123,
     "longitude": 20.4330005646,
     "city": "Basongo"
@@ -2692,7 +2692,7 @@
     "city": "Baotou"
   },
   "BAX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.3638000488,
     "longitude": 83.5384979248,
     "city": "Barnaul"
@@ -2748,7 +2748,8 @@
   "BBH": {
     "country": "Germany",
     "latitude": 54.3375015259,
-    "longitude": 12.6997003555
+    "longitude": 12.6997003555,
+    "city": "Barth"
   },
   "BBI": {
     "country": "India",
@@ -2828,7 +2829,7 @@
     "city": "Bucharest"
   },
   "BBV": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 4.6434130669,
     "longitude": -6.9239616394,
     "city": "Grand-Bereby"
@@ -2948,7 +2949,7 @@
     "city": "Boca Raton"
   },
   "BCX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.9380989075,
     "longitude": 58.3400001526,
     "city": "Beloretsk"
@@ -2995,7 +2996,7 @@
     "city": "Blanding"
   },
   "BDH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 26.531999588,
     "longitude": 54.824798584,
     "city": "Bandar Lengeh"
@@ -3013,7 +3014,7 @@
     "city": "Banjarmasin-Borneo Island"
   },
   "BDK": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 8.0172195435,
     "longitude": -2.7619400024,
     "city": "Bondoukou"
@@ -3067,7 +3068,7 @@
     "city": "Brindisi"
   },
   "BDT": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 4.2532100677,
     "longitude": 20.9752998352
   },
@@ -3078,7 +3079,7 @@
     "city": "Malselv"
   },
   "BDV": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -7.0669999123,
     "longitude": 29.783000946,
     "city": "Moba"
@@ -3170,7 +3171,7 @@
     "longitude": -6.3333301544
   },
   "BEN": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 32.0968017578,
     "longitude": 20.2695007324,
     "city": "Benghazi"
@@ -3434,7 +3435,7 @@
     "city": "Binghamton"
   },
   "BGN": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 68.556944,
     "longitude": 146.234722,
     "city": "Belaya Gora"
@@ -3772,7 +3773,7 @@
     "city": "Bejaia"
   },
   "BJB": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 37.4930000305,
     "longitude": 57.3082008362,
     "city": "Bojnord"
@@ -3886,7 +3887,7 @@
     "city": "Badajoz"
   },
   "BKA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.6171989441,
     "longitude": 38.0600013733,
     "city": "Moscow"
@@ -4011,7 +4012,7 @@
     "city": "Brookings"
   },
   "BKY": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -2.3089799881,
     "longitude": 28.8087997437
   },
@@ -4174,7 +4175,7 @@
     "city": "Stockholm"
   },
   "BMB": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 2.1827800274,
     "longitude": 22.4817008972,
     "city": "Bumbar"
@@ -4311,19 +4312,19 @@
     "city": "Nashville"
   },
   "BNB": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -0.2169999927,
     "longitude": 20.8500003815,
     "city": "Boende"
   },
   "BNC": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 0.5749999881,
     "longitude": 29.4738998413,
     "city": "Beni"
   },
   "BND": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.2182998657,
     "longitude": 56.3777999878,
     "city": "Bandar Abbas"
@@ -4413,7 +4414,7 @@
     "city": "Anua"
   },
   "BOA": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.8540000916,
     "longitude": 13.0640001297,
     "city": "Boma"
@@ -4437,7 +4438,7 @@
     "city": "Bordeaux/Merignac"
   },
   "BOE": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -1.0329999924,
     "longitude": 15.3830003738,
     "city": "Boundji"
@@ -4479,7 +4480,7 @@
     "city": "Mumbai"
   },
   "BON": {
-    "country": "BQ",
+    "country": "Bonaire",
     "latitude": 12.1309995651,
     "longitude": -68.2685012817,
     "city": "Kralendijk"
@@ -4632,7 +4633,7 @@
     "city": "Bubaque"
   },
   "BQG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.38,
     "longitude": 140.448,
     "city": "Bogorodskoye"
@@ -4661,7 +4662,7 @@
     "city": "Aguadilla"
   },
   "BQO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.2775001526,
     "longitude": -3.0252799988,
     "city": "Bouna"
@@ -4673,7 +4674,7 @@
     "city": "Barra"
   },
   "BQS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 50.4253997803,
     "longitude": 127.4120025635,
     "city": "Blagoveschensk"
@@ -4870,7 +4871,7 @@
     "city": "Bale/Mulhouse"
   },
   "BSM": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.6551017761,
     "longitude": 52.3496017456,
     "city": "Amol"
@@ -4912,7 +4913,7 @@
     "city": "Bost"
   },
   "BSU": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 1.2247200012,
     "longitude": 19.7889003754,
     "city": "Basankusu"
@@ -4947,7 +4948,7 @@
     "city": "Bertoua"
   },
   "BTB": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": 3.0499999523,
     "longitude": 18.5,
     "city": "Betou"
@@ -5000,7 +5001,7 @@
     "city": "Banda Aceh-Sumatra Island"
   },
   "BTK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.3706016541,
     "longitude": 101.6979980469,
     "city": "Bratsk"
@@ -5194,7 +5195,7 @@
     "city": "Bau Bau-Butung Island"
   },
   "BUX": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 1.5657199621,
     "longitude": 30.2208003998
   },
@@ -5204,7 +5205,7 @@
     "longitude": 115.6770019531
   },
   "BUZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 28.9447994232,
     "longitude": 50.8345985413,
     "city": "Bushehr"
@@ -5251,7 +5252,7 @@
     "longitude": 139.3480072021
   },
   "BVJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 70.315277778,
     "longitude": 68.333611111,
     "city": "Bovanenkovo"
@@ -5299,7 +5300,7 @@
     "city": "Beluga"
   },
   "BVV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 44.9199981689,
     "longitude": 147.6219940186,
     "city": "Iturup Island"
@@ -5347,7 +5348,8 @@
   "BWE": {
     "country": "Germany",
     "latitude": 52.3191986084,
-    "longitude": 10.5560998917
+    "longitude": 10.5560998917,
+    "city": "Braunschweig-Wolfsburg"
   },
   "BWF": {
     "country": "United Kingdom",
@@ -5398,7 +5400,7 @@
     "city": "Bandar Seri Begawan"
   },
   "BWO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.8582992554,
     "longitude": 47.7456016541,
     "city": "Balakovo"
@@ -5468,7 +5470,7 @@
     "city": "Balkhash"
   },
   "BXI": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.5329999924,
     "longitude": -6.4670000076,
     "city": "Boundiali"
@@ -5504,7 +5506,7 @@
     "city": "Biala Podlaska"
   },
   "BXR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 29.0841999054,
     "longitude": 58.4500007629
   },
@@ -5575,7 +5577,7 @@
     "city": "Beja"
   },
   "BYK": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 7.7388000488,
     "longitude": -5.0736699104
   },
@@ -5674,7 +5676,7 @@
     "city": "Balikesir"
   },
   "BZK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.2141990662,
     "longitude": 34.176399231,
     "city": "Bryansk"
@@ -5710,12 +5712,12 @@
     "city": "Beziers/Vias"
   },
   "BZU": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 2.8183500767,
     "longitude": 24.7936992645
   },
   "BZV": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -4.2516999245,
     "longitude": 15.2530002594,
     "city": "Brazzaville"
@@ -6063,10 +6065,10 @@
     "city": "Calicut"
   },
   "CCK": {
-    "country": "Cocos (Keeling) Islands",
+    "country": "Cocos Islands",
     "latitude": -12.1883001328,
     "longitude": 96.8339004517,
-    "city": "Cocos (Keeling) Islands"
+    "city": "Cocos Islands"
   },
   "CCL": {
     "country": "Australia",
@@ -6301,7 +6303,7 @@
     "longitude": 133.7100067139
   },
   "CEE": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.276667,
     "longitude": 38.028333,
     "city": "Cherepovets"
@@ -6330,7 +6332,7 @@
     "city": "Chiang Rai"
   },
   "CEK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.3058013916,
     "longitude": 61.5032997131,
     "city": "Chelyabinsk"
@@ -6933,7 +6935,7 @@
     "city": "Chongqing"
   },
   "CKH": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 70.6231002808,
     "longitude": 147.9019927979,
     "city": "Chokurdah"
@@ -6950,7 +6952,7 @@
     "city": "Ash Flat"
   },
   "CKL": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.8782997131,
     "longitude": 38.0616989136,
     "city": "Moscow"
@@ -6980,7 +6982,7 @@
     "city": "Carajas"
   },
   "CKT": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.5012016296,
     "longitude": 61.0648994446,
     "city": "Sarakhs"
@@ -7655,7 +7657,7 @@
     "city": "Canarana"
   },
   "CQD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 32.2971992493,
     "longitude": 50.8422012329,
     "city": "Shahrekord"
@@ -7834,7 +7836,7 @@
     "city": "Columbus"
   },
   "CSH": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.0299987793,
     "longitude": 35.7333335876,
     "city": "Solovetsky Islands"
@@ -7893,7 +7895,7 @@
     "city": "Changsha"
   },
   "CSY": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.0903015137,
     "longitude": 47.3473014832,
     "city": "Cheboksary"
@@ -8092,7 +8094,7 @@
     "longitude": 143.1139984131
   },
   "CUR": {
-    "country": "CW",
+    "country": "Curaçao",
     "latitude": 12.1888999939,
     "longitude": -68.9598007202,
     "city": "Willemstad"
@@ -8412,7 +8414,7 @@
     "city": "Celaya"
   },
   "CYX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 68.7406005859,
     "longitude": 161.3379974365,
     "city": "Cherskiy"
@@ -8534,7 +8536,7 @@
     "city": "Dallas"
   },
   "DAM": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 33.4114990234,
     "longitude": 36.5155982971,
     "city": "Damascus"
@@ -8751,13 +8753,13 @@
     "city": "Dehradun"
   },
   "DEE": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.9584007263,
     "longitude": 145.682998657,
     "city": "Kunashir Island"
   },
   "DEF": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 32.4343986511,
     "longitude": 48.3975982666
   },
@@ -8810,7 +8812,7 @@
     "city": "Detroit"
   },
   "DEZ": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 35.2854003906,
     "longitude": 40.1759986877,
     "city": "Deir ez-Zor"
@@ -8967,7 +8969,7 @@
     "city": "Dili"
   },
   "DIM": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.6516699791,
     "longitude": -4.6405601501,
     "city": "Dimbokro"
@@ -8997,7 +8999,7 @@
     "city": "Dire Dawa"
   },
   "DIS": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -4.20635,
     "longitude": 12.6599,
     "city": "Dolisie"
@@ -9045,13 +9047,13 @@
     "city": "Jayapura-Papua Island"
   },
   "DJM": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -2.5329999924,
     "longitude": 14.75,
     "city": "Djambala"
   },
   "DJO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.7928099632,
     "longitude": -6.4731898308
   },
@@ -9084,7 +9086,7 @@
     "city": "Dakar"
   },
   "DKS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 73.5178070068,
     "longitude": 80.3796691895,
     "city": "Dikson"
@@ -9213,7 +9215,7 @@
     "longitude": 138.8220062256
   },
   "DME": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.4087982178,
     "longitude": 37.9062995911,
     "city": "Moscow"
@@ -9838,7 +9840,7 @@
     "city": "Doylestown"
   },
   "DYR": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.7349014282,
     "longitude": 177.7409973145,
     "city": "Anadyr"
@@ -10147,7 +10149,7 @@
     "city": "Geneina"
   },
   "EGO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 50.6437988281,
     "longitude": 36.5900993347,
     "city": "Belgorod"
@@ -10189,7 +10191,7 @@
     "city": "Eisenach"
   },
   "EIE": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.4742012024,
     "longitude": 92.1125030518,
     "city": "Yeniseysk"
@@ -10201,7 +10203,7 @@
     "city": "Einasleigh"
   },
   "EIK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 46.68,
     "longitude": 38.21,
     "city": "Yeysk"
@@ -10273,7 +10275,7 @@
     "city": "Elko"
   },
   "EKS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 49.1902999878,
     "longitude": 142.082992554,
     "city": "Shakhtersk"
@@ -10686,7 +10688,7 @@
     "city": "Erfurt"
   },
   "ERG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.2750015259,
     "longitude": 108.029998779,
     "city": "Erbogachen"
@@ -10799,7 +10801,7 @@
     "city": "Eskisehir"
   },
   "ESL": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 46.3739013672,
     "longitude": 44.3308982849,
     "city": "Elista"
@@ -10825,7 +10827,8 @@
   "ESS": {
     "country": "Germany",
     "latitude": 51.4023017883,
-    "longitude": 6.9373297691
+    "longitude": 6.9373297691,
+    "city": "Essen/Mulheim"
   },
   "EST": {
     "country": "United States",
@@ -10941,7 +10944,7 @@
     "city": "San Jose"
   },
   "EUX": {
-    "country": "BQ",
+    "country": "Bonaire",
     "latitude": 17.4965000153,
     "longitude": -62.9794006348,
     "city": "Sint Eustatius"
@@ -11023,7 +11026,7 @@
     "city": "New Bern"
   },
   "EWO": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -0.8830000162,
     "longitude": 14.8000001907,
     "city": "Ewo"
@@ -11088,7 +11091,7 @@
     "city": "Elazig"
   },
   "EZV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.9210014343,
     "longitude": 65.0305023193
   },
@@ -11198,7 +11201,7 @@
     "city": "Fayetteville"
   },
   "FAZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 28.8917999268,
     "longitude": 53.7233009338,
     "city": "Fasa"
@@ -11240,7 +11243,7 @@
     "city": "Faribault"
   },
   "FBM": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -11.5913000107,
     "longitude": 27.5308990479,
     "city": "Lubumbashi"
@@ -11330,7 +11333,7 @@
     "city": "Frederick"
   },
   "FDU": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -3.3113200665,
     "longitude": 17.3817005157
   },
@@ -11365,7 +11368,7 @@
     "city": "Feijo"
   },
   "FEK": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.6000003815,
     "longitude": -5.1999998093,
     "city": "Ferkessedougou"
@@ -11489,7 +11492,7 @@
     "longitude": -13.5691995621
   },
   "FIH": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.3857498169,
     "longitude": 15.4446001053,
     "city": "Kinshasa"
@@ -11529,7 +11532,7 @@
     "city": "Baden-Baden"
   },
   "FKI": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 0.4816389978,
     "longitude": 25.3379993439,
     "city": "Kisangani"
@@ -11688,7 +11691,7 @@
     "city": "Falmouth"
   },
   "FMI": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.8755598068,
     "longitude": 29.25
   },
@@ -11737,7 +11740,8 @@
   "FNB": {
     "country": "Germany",
     "latitude": 53.6021995544,
-    "longitude": 13.3059997559
+    "longitude": 13.3059997559,
+    "city": "Neubrandenburg"
   },
   "FNC": {
     "country": "Portugal",
@@ -12097,7 +12101,7 @@
     "city": "Fort Worth"
   },
   "FTX": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -0.5313500166,
     "longitude": 15.9500999451,
     "city": "Owando"
@@ -12503,7 +12507,7 @@
     "city": "Gode"
   },
   "GDG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.4733009338,
     "longitude": 125.7949981689,
     "city": "Magdagachi"
@@ -12515,7 +12519,7 @@
     "city": "Melle"
   },
   "GDJ": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -6.7329998016,
     "longitude": 23.9500007629,
     "city": "Gandajika"
@@ -12568,13 +12572,13 @@
     "city": "Gladwin"
   },
   "GDX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.9109992981,
     "longitude": 150.7200012207,
     "city": "Magadan"
   },
   "GDZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 44.5820926295,
     "longitude": 38.0124807358,
     "city": "Gelendzhik"
@@ -12718,13 +12722,13 @@
     "city": "Longview"
   },
   "GGN": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.132999897,
     "longitude": -5.9499998093,
     "city": "Gagnoa"
   },
   "GGO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.5249900818,
     "longitude": -7.4786100388,
     "city": "Guiglo"
@@ -12767,7 +12771,8 @@
   "GHF": {
     "country": "Germany",
     "latitude": 49.6481018066,
-    "longitude": 9.9664897919
+    "longitude": 9.9664897919,
+    "city": "Giebelstadt"
   },
   "GHM": {
     "country": "United States",
@@ -12776,7 +12781,7 @@
     "city": "Centerville"
   },
   "GHT": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 25.1455993652,
     "longitude": 10.1426000595,
     "city": "Ghat"
@@ -12891,7 +12896,8 @@
   "GKE": {
     "country": "Germany",
     "latitude": 50.9608001709,
-    "longitude": 6.0424199104
+    "longitude": 6.0424199104,
+    "city": "Geilenkirchen"
   },
   "GKH": {
     "country": "Nepal",
@@ -13022,7 +13028,7 @@
     "city": "Breda"
   },
   "GMA": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 3.2353699207,
     "longitude": 19.7712993622,
     "city": "Gemena"
@@ -13052,7 +13058,7 @@
     "city": "Kiev"
   },
   "GMM": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -1.829403,
     "longitude": 15.885237,
     "city": "Gamboma"
@@ -13206,7 +13212,7 @@
     "city": "Dabolim"
   },
   "GOJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.2300987244,
     "longitude": 43.7840003967,
     "city": "Nizhny Novgorod"
@@ -13218,7 +13224,7 @@
     "city": "Guthrie"
   },
   "GOM": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -1.6708099842,
     "longitude": 29.2385005951,
     "city": "Goma"
@@ -13438,7 +13444,7 @@
     "city": "Sao Paulo"
   },
   "GRV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.3883018494,
     "longitude": 45.698600769,
     "city": "Grozny"
@@ -13550,7 +13556,7 @@
     "city": "Gedaref"
   },
   "GSV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.712778,
     "longitude": 46.171111,
     "city": "Saratov"
@@ -14144,7 +14150,7 @@
     "city": "Mokuleia"
   },
   "HDM": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 34.8692016602,
     "longitude": 48.5525016785,
     "city": "Hamadan"
@@ -14313,7 +14319,7 @@
     "longitude": 97.9757995605
   },
   "HGO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.3871803284,
     "longitude": -5.5566601753
   },
@@ -14620,7 +14626,7 @@
     "city": "Hamilton"
   },
   "HMA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.0284996033,
     "longitude": 69.0860977173,
     "city": "Khanty-Mansiysk"
@@ -15042,13 +15048,13 @@
     "city": "Hsinchu City"
   },
   "HTA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.0262985229,
     "longitude": 113.3059997559,
     "city": "Chita"
   },
   "HTG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 71.9781036377,
     "longitude": 102.4909973145,
     "city": "Khatanga"
@@ -15184,7 +15190,7 @@
     "city": "Hualien City"
   },
   "HUQ": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 29.1100997925,
     "longitude": 15.9656000137
   },
@@ -15378,7 +15384,7 @@
     "city": "Hazleton"
   },
   "IAA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 67.4372024536,
     "longitude": 86.6219024658,
     "city": "Igarka"
@@ -15426,12 +15432,12 @@
     "city": "Del Carmen"
   },
   "IAQ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.2126998901,
     "longitude": 54.3185997009
   },
   "IAR": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.5606994629,
     "longitude": 40.1573982239
   },
@@ -15543,7 +15549,7 @@
     "city": "Idre"
   },
   "IDF": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5,
     "longitude": 19.6000003815,
     "city": "Idiofa"
@@ -15630,7 +15636,7 @@
     "longitude": 141.2169952393
   },
   "IFH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 32.9289016724,
     "longitude": 51.5611000061,
     "city": "Hesa"
@@ -15647,7 +15653,7 @@
     "longitude": 146.0119934082
   },
   "IFN": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 32.7508010864,
     "longitude": 51.8613014221,
     "city": "Isfahan"
@@ -15735,7 +15741,7 @@
     "city": "Manching"
   },
   "IGT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.3222999573,
     "longitude": 45.0125999451,
     "city": "Magas"
@@ -15765,7 +15771,7 @@
     "city": "Ihosy"
   },
   "IHR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.2360992432,
     "longitude": 60.7200012207
   },
@@ -15776,13 +15782,13 @@
     "city": "Inis Meain"
   },
   "IIL": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 33.5866012573,
     "longitude": 46.404800415,
     "city": "Ilam"
   },
   "IJK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.8280982971,
     "longitude": 53.4575004578,
     "city": "Izhevsk"
@@ -15800,7 +15806,7 @@
     "city": "Jacksonville"
   },
   "IKA": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 35.4160995483,
     "longitude": 51.1521987915,
     "city": "Tehran"
@@ -15824,7 +15830,7 @@
     "city": "Kankakee"
   },
   "IKL": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -1.2000000477,
     "longitude": 23.283000946,
     "city": "Ikela"
@@ -15841,13 +15847,13 @@
     "longitude": 141.4420013428
   },
   "IKS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 71.6977005005,
     "longitude": 128.9029998779,
     "city": "Tiksi"
   },
   "IKT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.2680015564,
     "longitude": 104.388999939,
     "city": "Irkutsk"
@@ -15891,7 +15897,8 @@
   "ILH": {
     "country": "Germany",
     "latitude": 49.4738998413,
-    "longitude": 10.3880996704
+    "longitude": 10.3880996704,
+    "city": "Illesheim"
   },
   "ILI": {
     "country": "United States",
@@ -16014,7 +16021,7 @@
     "city": "Imperatriz"
   },
   "IMQ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 39.3300018311,
     "longitude": 44.4300003052,
     "city": "Makou"
@@ -16026,7 +16033,7 @@
     "city": "Iron Mountain Kingsford"
   },
   "INA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.0548324585,
     "longitude": 60.1103210449,
     "city": "Inta"
@@ -16090,7 +16097,7 @@
     "city": "Innsbruck"
   },
   "INO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -1.9472199678,
     "longitude": 18.2858009338,
     "city": "Inongo"
@@ -16156,7 +16163,7 @@
     "city": "Castletown"
   },
   "ION": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": 1.6169999838,
     "longitude": 18.0669994354,
     "city": "Impfondo"
@@ -16323,7 +16330,7 @@
     "city": "Kirksville"
   },
   "IRM": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.1987991333,
     "longitude": 64.4393005371
   },
@@ -16340,7 +16347,7 @@
     "city": "Birao"
   },
   "IRP": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 2.8276100159,
     "longitude": 27.588300705
   },
@@ -16558,7 +16565,7 @@
     "city": "Inverway"
   },
   "IWA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.9393997192,
     "longitude": 40.9407997131,
     "city": "Ivanovo"
@@ -16823,7 +16830,7 @@
     "city": "Puntarenas"
   },
   "JAR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 28.5867004395,
     "longitude": 53.5791015625
   },
@@ -17233,7 +17240,7 @@
     "city": "Joinville"
   },
   "JOK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.7005996704,
     "longitude": 47.9047012329,
     "city": "Yoshkar-Ola"
@@ -17468,7 +17475,7 @@
     "longitude": 24.6909999847
   },
   "JWN": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.7737007141,
     "longitude": 48.3594017029
   },
@@ -17484,7 +17491,7 @@
     "city": "Jackson"
   },
   "JYR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 28.7269001007,
     "longitude": 57.67029953
   },
@@ -17513,7 +17520,7 @@
     "city": "Kariba"
   },
   "KAC": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 37.0205993652,
     "longitude": 41.1913986206,
     "city": "Kamishly"
@@ -17554,7 +17561,7 @@
     "city": "Kuusamo"
   },
   "KAP": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -8.3500003815,
     "longitude": 22.5830001831,
     "city": "Kapanga"
@@ -17652,13 +17659,13 @@
     "longitude": 147.191472222
   },
   "KBN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -6.132999897,
     "longitude": 24.4829998016,
     "city": "Kabinda"
   },
   "KBO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -6.0830001831,
     "longitude": 26.9169998169,
     "city": "Kabalo"
@@ -17733,7 +17740,7 @@
     "city": "Kuching"
   },
   "KCK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.7729988098,
     "longitude": 108.0640029907,
     "city": "Kirensk"
@@ -17873,7 +17880,7 @@
     "city": "Kadugli"
   },
   "KEC": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -10.3500003815,
     "longitude": 28.6329994202,
     "city": "Kasenga"
@@ -17885,7 +17892,7 @@
     "city": "Kaedi"
   },
   "KEE": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -0.0829999968,
     "longitude": 14.5329999924,
     "city": "Kelle"
@@ -17903,7 +17910,7 @@
     "city": "Kepi-Papua Island"
   },
   "KEJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.2700996399,
     "longitude": 86.1072006226,
     "city": "Kemerovo"
@@ -17927,7 +17934,7 @@
     "city": "Kenema"
   },
   "KEO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.5,
     "longitude": -7.5669999123,
     "city": "Odienne"
@@ -17945,7 +17952,7 @@
     "city": "Kebar-Papua Island"
   },
   "KER": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 30.2744007111,
     "longitude": 56.9510993958,
     "city": "Kerman"
@@ -18004,7 +18011,7 @@
     "city": "Kastamonu"
   },
   "KGA": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.9000501633,
     "longitude": 22.4692001343,
     "city": "Kananga"
@@ -18015,7 +18022,7 @@
     "longitude": 137.5209960938
   },
   "KGD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.8899993896,
     "longitude": 20.5925998688,
     "city": "Kaliningrad"
@@ -18063,7 +18070,7 @@
     "city": "Kigali"
   },
   "KGN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.5329999924,
     "longitude": 26.6170005798,
     "city": "Kasongo"
@@ -18075,7 +18082,7 @@
     "city": "Kirovograd"
   },
   "KGP": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 62.1903991699,
     "longitude": 74.5337982178,
     "city": "Kogalym"
@@ -18104,7 +18111,7 @@
     "city": "Kerch"
   },
   "KHD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 33.4353981018,
     "longitude": 48.2829017639
   },
@@ -18138,7 +18145,7 @@
     "longitude": 22.3931007385
   },
   "KHK": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 29.2602996826,
     "longitude": 50.3238983154
   },
@@ -18172,7 +18179,7 @@
     "city": "Khost"
   },
   "KHV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 48.5279998779,
     "longitude": 135.18800354,
     "city": "Khabarovsk"
@@ -18220,7 +18227,7 @@
     "city": "Kingfisher Lake"
   },
   "KIH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 26.5261993408,
     "longitude": 53.9802017212,
     "city": "Kish Island"
@@ -18298,7 +18305,7 @@
     "city": "Kilwa Masoko"
   },
   "KJA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.1729011536,
     "longitude": 92.4933013916,
     "city": "Krasnoyarsk"
@@ -18379,7 +18386,7 @@
     "longitude": -146.8849945068
   },
   "KKW": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.0357699394,
     "longitude": 18.7856006622
   },
@@ -18413,7 +18420,7 @@
     "city": "Kaolack"
   },
   "KLD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.8246994019,
     "longitude": 35.7577018738,
     "city": "Tver"
@@ -18425,7 +18432,7 @@
     "city": "Kaele"
   },
   "KLF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.5499992371,
     "longitude": 36.3666687012,
     "city": "Kaluga"
@@ -18442,7 +18449,7 @@
     "longitude": 74.2893981934
   },
   "KLI": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 4.1576399803,
     "longitude": 21.6508998871
   },
@@ -18506,7 +18513,7 @@
     "city": "Kalamata"
   },
   "KLY": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -2.5780000687,
     "longitude": 26.7339992523,
     "city": "Kalima"
@@ -18554,7 +18561,7 @@
     "city": "Kumamoto"
   },
   "KMK": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -3.4830000401,
     "longitude": 12.6169996262,
     "city": "Makabana"
@@ -18565,7 +18572,7 @@
     "longitude": 140.0570068359
   },
   "KMN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -8.7286100388,
     "longitude": 24.991399765,
     "city": "Kamina"
@@ -18612,7 +18619,7 @@
     "city": "Kalemyo"
   },
   "KMW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.7969017029,
     "longitude": 41.0194015503,
     "city": "Kostroma"
@@ -18641,7 +18648,7 @@
     "city": "Kanab"
   },
   "KND": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -2.9191799164,
     "longitude": 25.9153995514,
     "city": "Kindu"
@@ -18664,7 +18671,7 @@
     "longitude": 117.6330032349
   },
   "KNJ": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -3.9500000477,
     "longitude": 14.5170001984,
     "city": "Kindamba"
@@ -18676,7 +18683,7 @@
     "city": "Kokhanok"
   },
   "KNM": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -7.5830001831,
     "longitude": 24.1499996185,
     "city": "Kaniama"
@@ -18700,7 +18707,7 @@
     "city": "Kone"
   },
   "KNR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.8204994202,
     "longitude": 52.3521995544,
     "city": "Kangan"
@@ -18787,7 +18794,7 @@
     "city": "Kokkola / Kruunupyy"
   },
   "KOO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.3944401741,
     "longitude": 26.9899997711,
     "city": "Kongolo"
@@ -18885,7 +18892,7 @@
     "city": "Perryville"
   },
   "KPW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 67.8450012207,
     "longitude": 166.13999939,
     "city": "Keperveem"
@@ -18971,7 +18978,7 @@
     "longitude": 20.3367996216
   },
   "KRO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.4752998352,
     "longitude": 65.4156036377,
     "city": "Kurgan"
@@ -18989,7 +18996,7 @@
     "city": "Kramatorsk"
   },
   "KRR": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 45.0346984863,
     "longitude": 39.170501709,
     "city": "Krasnodar"
@@ -19019,7 +19026,7 @@
     "city": "Karamay"
   },
   "KRZ": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -1.4349999428,
     "longitude": 19.0240001678,
     "city": "Kiri"
@@ -19055,7 +19062,7 @@
     "city": "Kassel"
   },
   "KSH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 34.3459014893,
     "longitude": 47.1581001282,
     "city": "Kermanshah"
@@ -19143,7 +19150,7 @@
     "city": "Kars"
   },
   "KSZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.2358016968,
     "longitude": 46.6974983215,
     "city": "Kotlas"
@@ -19271,7 +19278,7 @@
     "city": "Kudat"
   },
   "KUF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.504901886,
     "longitude": 50.1642990112,
     "city": "Samara"
@@ -19370,7 +19377,7 @@
     "city": "Kavieng"
   },
   "KVK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 67.4633026123,
     "longitude": 33.5882987976,
     "city": "Apatity"
@@ -19382,13 +19389,13 @@
     "city": "Kivalina"
   },
   "KVM": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.6669998169,
     "longitude": 170.4170074463,
     "city": "Markovo"
   },
   "KVX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.5032997131,
     "longitude": 49.3483009338,
     "city": "Kirov"
@@ -19472,12 +19479,12 @@
     "city": "Kwethluk"
   },
   "KWZ": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -10.7658996582,
     "longitude": 25.5056991577
   },
   "KXD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.6550827026,
     "longitude": 67.4300460815,
     "city": "Kondinskoye"
@@ -19495,7 +19502,7 @@
     "city": "Koro Island"
   },
   "KXK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 50.4090003967,
     "longitude": 136.9340057373,
     "city": "Komsomolsk-on-Amur"
@@ -19565,7 +19572,7 @@
     "city": "Koyukuk"
   },
   "KYZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.6693992615,
     "longitude": 94.4005966187,
     "city": "Kyzyl"
@@ -19584,7 +19591,8 @@
   "KZG": {
     "country": "Germany",
     "latitude": 49.7430992126,
-    "longitude": 10.2005996704
+    "longitude": 10.2005996704,
+    "city": "Illesheim"
   },
   "KZI": {
     "country": "Greece",
@@ -19593,7 +19601,7 @@
     "city": "Kozani"
   },
   "KZN": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.6062011719,
     "longitude": 49.2787017822,
     "city": "Kazan"
@@ -19695,7 +19703,7 @@
     "city": "La Paz"
   },
   "LAQ": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 32.7887001038,
     "longitude": 21.9643001556,
     "city": "Al Bayda'"
@@ -19803,7 +19811,7 @@
     "city": "Liberal"
   },
   "LBO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.9616699219,
     "longitude": 23.3782997131,
     "city": "Lusambo"
@@ -19943,7 +19951,7 @@
     "longitude": 139.3370056152
   },
   "LCO": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -2.4500000477,
     "longitude": 14.5329999924,
     "city": "Lague"
@@ -19997,7 +20005,7 @@
     "city": "Tarbes/Lourdes/Pyrenees"
   },
   "LDG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.8960037231,
     "longitude": 45.7229995728,
     "city": "Leshukonskoye"
@@ -20099,7 +20107,7 @@
     "city": "Lencois"
   },
   "LED": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.8003005981,
     "longitude": 30.2625007629,
     "city": "St. Petersburg"
@@ -20240,7 +20248,7 @@
     "city": "Lufkin"
   },
   "LFM": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.3726997375,
     "longitude": 53.1888008118,
     "city": "Lamerd"
@@ -20388,7 +20396,8 @@
   "LHA": {
     "country": "Germany",
     "latitude": 48.3693008423,
-    "longitude": 7.8277201653
+    "longitude": 7.8277201653,
+    "city": "Lahr"
   },
   "LHE": {
     "country": "Pakistan",
@@ -20456,7 +20465,7 @@
     "city": "Limon"
   },
   "LIE": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 3.632999897,
     "longitude": 18.6329994202,
     "city": "Libenge"
@@ -20516,7 +20525,7 @@
     "city": "Lins"
   },
   "LIQ": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 2.1706600189,
     "longitude": 21.4969005585
   },
@@ -20557,7 +20566,7 @@
     "city": "Fort Stewart(Hinesville)"
   },
   "LJA": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -3.4170000553,
     "longitude": 23.4500007629,
     "city": "Lodja"
@@ -20782,7 +20791,7 @@
     "city": "Lampedusa"
   },
   "LMQ": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 30.3780994415,
     "longitude": 19.5764007568
   },
@@ -20894,7 +20903,7 @@
     "city": "Londolovit"
   },
   "LNX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.745,
     "longitude": 32.065,
     "city": "Smolensk"
@@ -21059,7 +21068,7 @@
     "city": "Guayabal"
   },
   "LPK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.7028007507,
     "longitude": 39.5377998352,
     "city": "Lipetsk"
@@ -21089,7 +21098,7 @@
     "city": "Lappeenranta"
   },
   "LPQ": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 19.8973007202,
     "longitude": 102.1610031128,
     "city": "Luang Phabang"
@@ -21196,7 +21205,7 @@
     "city": "La Romana"
   },
   "LRR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 27.6746997833,
     "longitude": 54.3833007812,
     "city": "Lar"
@@ -21370,7 +21379,7 @@
     "city": "Lai"
   },
   "LTD": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 30.1516990662,
     "longitude": 9.7153100967,
     "city": "Ghadames"
@@ -21388,7 +21397,7 @@
     "city": "Altai"
   },
   "LTK": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 35.4011001587,
     "longitude": 35.9486999512,
     "city": "Latakia"
@@ -21561,7 +21570,7 @@
     "city": "Cape Lisburne"
   },
   "LUS": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.8000001907,
     "longitude": 18.716999054,
     "city": "Lusanga"
@@ -21642,7 +21651,7 @@
     "longitude": 122.4240036011
   },
   "LVP": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 26.810300827,
     "longitude": 53.356300354
   },
@@ -21742,7 +21751,7 @@
     "city": "Lhasa"
   },
   "LXG": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 20.966999054,
     "longitude": 101.4000015259,
     "city": "Luang Namtha"
@@ -21861,7 +21870,7 @@
     "city": "Lydd"
   },
   "LZA": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -7.1830000877,
     "longitude": 22.3999996185,
     "city": "Luiza"
@@ -21879,7 +21888,7 @@
     "city": "Liuzhou"
   },
   "LZI": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.9499998093,
     "longitude": 14.1330003738,
     "city": "Luozi"
@@ -22026,7 +22035,7 @@
     "longitude": 147.4239959717
   },
   "MAT": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.7996101379,
     "longitude": 13.4404001236,
     "city": "Matadi"
@@ -22320,7 +22329,7 @@
     "city": "Mason City"
   },
   "MCX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 42.8167991638,
     "longitude": 47.6523017883,
     "city": "Makhachkala"
@@ -22380,7 +22389,7 @@
     "city": "Makurdi"
   },
   "MDK": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 0.0226000007,
     "longitude": 18.2887001038,
     "city": "Mbandaka"
@@ -22582,7 +22591,7 @@
     "city": "Minden"
   },
   "MEW": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.8499999046,
     "longitude": 21.5499992371,
     "city": "Mweka"
@@ -22860,7 +22869,7 @@
     "city": "Dalcahue"
   },
   "MHD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.2351989746,
     "longitude": 59.6409988403,
     "city": "Mashhad"
@@ -23091,7 +23100,7 @@
     "city": "Manja"
   },
   "MJC": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 7.272069931,
     "longitude": -7.5873599052
   },
@@ -23113,7 +23122,7 @@
     "city": "Mayajigua"
   },
   "MJI": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 32.8941001892,
     "longitude": 13.2760000229,
     "city": "Tripoli"
@@ -23131,7 +23140,7 @@
     "city": "Mouila"
   },
   "MJM": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -6.121240139,
     "longitude": 23.5690002441,
     "city": "Mbuji Mayi"
@@ -23177,7 +23186,7 @@
     "city": "San Javier"
   },
   "MJZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 62.5346984863,
     "longitude": 114.0390014648,
     "city": "Mirny"
@@ -23225,7 +23234,7 @@
     "city": "Mboki"
   },
   "MKJ": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -0.0170000009,
     "longitude": 15.5830001831,
     "city": "Makoua"
@@ -23500,7 +23509,7 @@
     "city": "Matsumoto"
   },
   "MMK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 68.7817001343,
     "longitude": 32.7508010864,
     "city": "Murmansk"
@@ -23576,7 +23585,7 @@
     "city": "Karakelong Island"
   },
   "MNB": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.9308600426,
     "longitude": 12.3517999649
   },
@@ -23646,7 +23655,7 @@
     "city": "Marion"
   },
   "MNO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -7.2888898849,
     "longitude": 27.3943996429,
     "city": "Manono"
@@ -23939,7 +23948,7 @@
     "city": "Marqua"
   },
   "MQF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.3931007385,
     "longitude": 58.7556991577,
     "city": "Magnitogorsk"
@@ -23951,7 +23960,7 @@
     "city": "Minacu"
   },
   "MQJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.4508590698,
     "longitude": 143.2615509033,
     "city": "Honuu"
@@ -24126,7 +24135,7 @@
     "city": "Port Louis"
   },
   "MRV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 44.2251014709,
     "longitude": 43.0819015503,
     "city": "Mineralnyye Vody"
@@ -24138,7 +24147,7 @@
     "city": "Lolland Falster / Maribo"
   },
   "MRX": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 30.5562000275,
     "longitude": 49.1519012451
   },
@@ -24202,7 +24211,7 @@
     "city": "Muscle Shoals"
   },
   "MSM": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.7829999924,
     "longitude": 17.8500003815,
     "city": "Masi Manimba"
@@ -24268,7 +24277,7 @@
     "city": "Massawa"
   },
   "MSX": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -2.9500000477,
     "longitude": 12.6999998093,
     "city": "Mossendjo"
@@ -24529,7 +24538,7 @@
     "city": "Multan"
   },
   "MUY": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -4.0148739815,
     "longitude": 13.9661121368,
     "city": "Mouyondzi"
@@ -25172,7 +25181,7 @@
     "longitude": 102.31300354
   },
   "NAL": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.5129013062,
     "longitude": 43.6366004944,
     "city": "Nalchik"
@@ -25249,7 +25258,7 @@
     "city": "Beijing"
   },
   "NBC": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.5647010803,
     "longitude": 52.0924987793,
     "city": "Nizhnekamsk"
@@ -25447,7 +25456,8 @@
   "NDZ": {
     "country": "Germany",
     "latitude": 53.7677001953,
-    "longitude": 8.6584997177
+    "longitude": 8.6584997177,
+    "city": "Cuxhaven"
   },
   "NEC": {
     "country": "Argentina",
@@ -25456,7 +25466,7 @@
     "city": "Necochea"
   },
   "NEF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.1068992615,
     "longitude": 54.3471984863,
     "city": "Neftekamsk"
@@ -25492,7 +25502,7 @@
     "city": "Jacksonville"
   },
   "NEU": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 20.4183998108,
     "longitude": 104.0670013428
   },
@@ -25509,7 +25519,7 @@
     "city": "New Orleans"
   },
   "NFG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.1082992554,
     "longitude": 72.6500015259,
     "city": "Nefteyugansk"
@@ -25521,7 +25531,7 @@
     "city": "Fallon"
   },
   "NFR": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 29.2131996155,
     "longitude": 21.5923995972,
     "city": "Nafurah 1"
@@ -25686,7 +25696,7 @@
     "city": "Niamey"
   },
   "NIO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -2.7174999714,
     "longitude": 17.6847000122,
     "city": "Nioki"
@@ -25721,7 +25731,7 @@
     "longitude": 139.4499969482
   },
   "NJC": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.9492988586,
     "longitude": 76.4835968018,
     "city": "Nizhnevartovsk"
@@ -25751,7 +25761,7 @@
     "city": "Nanjing"
   },
   "NKL": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -5.4499998093,
     "longitude": 14.8330001831,
     "city": "Nkolo Fuma"
@@ -25781,7 +25791,7 @@
     "city": "San Diego"
   },
   "NKY": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -4.2170000076,
     "longitude": 13.2829999924,
     "city": "Nkayi"
@@ -25828,7 +25838,7 @@
     "longitude": 120.1979980469
   },
   "NLO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.3266601563,
     "longitude": 15.3275003433
   },
@@ -25919,7 +25929,7 @@
     "city": "Nondalton"
   },
   "NNM": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 67.6399993896,
     "longitude": 53.1218986511,
     "city": "Naryan Mar"
@@ -25982,7 +25992,7 @@
     "longitude": -110.9759979248
   },
   "NOJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.1833000183,
     "longitude": 75.2699966431,
     "city": "Noyabrsk"
@@ -26036,7 +26046,7 @@
     "city": "Huambo"
   },
   "NOZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.8114013672,
     "longitude": 86.8771972656,
     "city": "Novokuznetsk"
@@ -26208,7 +26218,7 @@
     "city": "Milton"
   },
   "NSH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.6632995605,
     "longitude": 51.4646987915
   },
@@ -26219,7 +26229,7 @@
     "city": "Yaounde"
   },
   "NSK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 69.3110961914,
     "longitude": 87.3321990967,
     "city": "Norilsk"
@@ -26367,7 +26377,7 @@
     "city": "Nuiqsut"
   },
   "NUJ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 35.2116012573,
     "longitude": 48.6534004211,
     "city": "Hamadan"
@@ -26420,7 +26430,7 @@
     "city": "Oak Harbor"
   },
   "NUX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.0693969727,
     "longitude": 76.5203018188,
     "city": "Novy Urengoy"
@@ -26509,7 +26519,7 @@
     "city": "Nanyuki"
   },
   "NYM": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.4809036255,
     "longitude": 72.6988983154,
     "city": "Nadym"
@@ -26758,7 +26768,7 @@
     "city": "Oak Harbor"
   },
   "ODY": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 20.6826992035,
     "longitude": 101.9940032959,
     "city": "Oudomsay"
@@ -26770,7 +26780,7 @@
     "city": "Oecussi-Ambeno"
   },
   "OEL": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.9347000122,
     "longitude": 36.0022010803,
     "city": "Orel"
@@ -26806,7 +26816,7 @@
     "city": "Omaha"
   },
   "OFI": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 9.6000003815,
     "longitude": -4.0500001907,
     "city": "Ouango Fitini"
@@ -26870,7 +26880,7 @@
     "longitude": 122.9779968262
   },
   "OGO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 6.7155599594,
     "longitude": -3.470279932,
     "city": "Abengourou"
@@ -26900,7 +26910,7 @@
     "city": "Ouargla"
   },
   "OGZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.2051010132,
     "longitude": 44.6066017151,
     "city": "Beslan"
@@ -26917,7 +26927,7 @@
     "city": "Ohrid"
   },
   "OHO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.4100646973,
     "longitude": 143.0565032959,
     "city": "Okhotsk"
@@ -27214,13 +27224,13 @@
     "city": "Omega"
   },
   "OMH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 37.6680984497,
     "longitude": 45.0686988831,
     "city": "Urmia"
   },
   "OMI": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 30.8351993561,
     "longitude": 49.5349006653,
     "city": "Omidiyeh"
@@ -27244,7 +27254,7 @@
     "city": "Oradea"
   },
   "OMS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.966999054,
     "longitude": 73.3105010986,
     "city": "Omsk"
@@ -27567,7 +27577,7 @@
     "city": "Omora"
   },
   "OSF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.5116996765,
     "longitude": 37.5071983337,
     "city": "Moscow"
@@ -27630,7 +27640,7 @@
     "city": "Columbus"
   },
   "OSW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.0724983215,
     "longitude": 58.5956001282,
     "city": "Orsk"
@@ -27731,7 +27741,7 @@
     "city": "Oujda"
   },
   "OUE": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": 1.6159900427,
     "longitude": 16.0379009247
   },
@@ -27748,7 +27758,7 @@
     "city": "Oudtshoorn"
   },
   "OUI": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 20.2572994232,
     "longitude": 100.43699646
   },
@@ -27795,7 +27805,7 @@
     "city": "Bekily"
   },
   "OVB": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.0125999451,
     "longitude": 82.6507034302,
     "city": "Novosibirsk"
@@ -27831,7 +27841,7 @@
     "city": "Olavarria"
   },
   "OVS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.3266220093,
     "longitude": 63.6019134521,
     "city": "Sovetskiy"
@@ -28361,7 +28371,7 @@
     "city": "Pardubice"
   },
   "PEE": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.9145011902,
     "longitude": 56.0211982727,
     "city": "Perm"
@@ -28427,7 +28437,7 @@
     "city": "Perth"
   },
   "PES": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.8852005005,
     "longitude": 34.1547012329,
     "city": "Petrozavodsk"
@@ -28451,7 +28461,7 @@
     "city": "Peshawar"
   },
   "PEZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.1105995178,
     "longitude": 45.0210990906,
     "city": "Penza"
@@ -28481,13 +28491,13 @@
     "city": "Paphos"
   },
   "PFQ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 39.6035995483,
     "longitude": 47.8815002441,
     "city": "Parsabad"
   },
   "PFR": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -4.3330001831,
     "longitude": 20.5830001831,
     "city": "Ilebo"
@@ -28826,7 +28836,7 @@
     "city": "Parkersburg"
   },
   "PKC": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 53.1679000854,
     "longitude": 158.453994751,
     "city": "Petropavlovsk-Kamchatsky"
@@ -28908,7 +28918,7 @@
     "city": "Pekanbaru-Sumatra Island"
   },
   "PKV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.7839012146,
     "longitude": 28.3955993652,
     "city": "Pskov"
@@ -28931,7 +28941,7 @@
     "city": "Palangkaraya-Kalimantan Tengah"
   },
   "PKZ": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 15.1321001053,
     "longitude": 105.78099823,
     "city": "Pakse"
@@ -29121,7 +29131,7 @@
     "longitude": 175.6170043945
   },
   "PMS": {
-    "country": "Syrian Arab Republic",
+    "country": "Syria",
     "latitude": 34.5573997498,
     "longitude": 38.3168983459
   },
@@ -29222,7 +29232,7 @@
     "city": "Pune"
   },
   "PNR": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -4.8160300255,
     "longitude": 11.8865995407,
     "city": "Pointe Noire"
@@ -29963,7 +29973,7 @@
     "city": "Pukarua"
   },
   "PUN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -1.3669999838,
     "longitude": 26.3330001831,
     "city": "Punia"
@@ -30101,7 +30111,7 @@
     "city": "Puerto Vallarta"
   },
   "PVS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.3780975342,
     "longitude": -173.2429962158,
     "city": "Chukotka"
@@ -30131,7 +30141,7 @@
     "city": "Plentywood"
   },
   "PWE": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 69.7833023071,
     "longitude": 170.5970001221,
     "city": "Pevek"
@@ -30149,7 +30159,7 @@
     "city": "Pitts Town"
   },
   "PWO": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -8.4670000076,
     "longitude": 28.8829994202,
     "city": "Pweto"
@@ -30219,7 +30229,7 @@
     "longitude": -67.6061019897
   },
   "PYJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.4003982544,
     "longitude": 112.029998779,
     "city": "Yakutia"
@@ -30456,7 +30466,7 @@
     "city": "Avarua"
   },
   "RAS": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 37.323333,
     "longitude": 49.617778,
     "city": "Rasht"
@@ -30780,7 +30790,7 @@
     "city": "Rawson"
   },
   "REN": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.7957992554,
     "longitude": 55.4566993713,
     "city": "Orenburg"
@@ -30898,7 +30908,7 @@
     "longitude": -147.6609954834
   },
   "RGK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.9667015076,
     "longitude": 85.8332977295,
     "city": "Gorno-Altaysk"
@@ -31130,7 +31140,7 @@
     "city": "Logrono"
   },
   "RJN": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 30.297700882,
     "longitude": 56.0511016846
   },
@@ -31470,7 +31480,7 @@
     "city": "Rotorua"
   },
   "ROV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 47.50083333,
     "longitude": 39.93361111,
     "city": "Rostov-on-Don"
@@ -31689,7 +31699,7 @@
     "longitude": 115.5400009155
   },
   "RTW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.5649986267,
     "longitude": 46.0466995239,
     "city": "Saratov"
@@ -31706,12 +31716,12 @@
     "city": "Arua"
   },
   "RUD": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.4253005981,
     "longitude": 55.1041984558
   },
   "RUE": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 0.117142,
     "longitude": 29.312992,
     "city": "Butembo"
@@ -31804,7 +31814,7 @@
     "city": "Saravena"
   },
   "RVI": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 47.2582015991,
     "longitude": 39.8180999756,
     "city": "Rostov-on-Don"
@@ -31892,7 +31902,7 @@
     "city": "Roxas City"
   },
   "RYB": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.1041984558,
     "longitude": 38.9294013977,
     "city": "Rybinsk"
@@ -31934,7 +31944,7 @@
     "city": "Rzeszow"
   },
   "RZN": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.5559005737,
     "longitude": 39.8552017212,
     "city": "Ryazan"
@@ -31946,7 +31956,7 @@
     "city": "Taytay Airport"
   },
   "RZR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.9099006653,
     "longitude": 50.679599762
   },
@@ -31963,7 +31973,7 @@
     "city": "Saratoga"
   },
   "SAB": {
-    "country": "BQ",
+    "country": "Bonaire",
     "latitude": 17.6450004578,
     "longitude": -63.2200012207,
     "city": "Saba"
@@ -32178,7 +32188,7 @@
     "city": "Steamboat Springs"
   },
   "SBT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 71.215,
     "longitude": 72.038,
     "city": "Sabetta"
@@ -32332,7 +32342,7 @@
     "city": "Suceava"
   },
   "SCW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.6469993591,
     "longitude": 50.8451004028,
     "city": "Syktyvkar"
@@ -32374,7 +32384,7 @@
     "city": "Louisville"
   },
   "SDG": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 35.2458992004,
     "longitude": 47.0092010498
   },
@@ -32474,7 +32484,7 @@
     "city": "Seattle"
   },
   "SEB": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 26.9869995117,
     "longitude": 14.4724998474,
     "city": "Sabha"
@@ -32516,7 +32526,7 @@
     "city": "Southend"
   },
   "SEO": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 7.9683299065,
     "longitude": -6.7108302116,
     "city": "Seguela"
@@ -32682,7 +32692,7 @@
     "city": "Sheghnan"
   },
   "SGC": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.3437004089,
     "longitude": 73.401802063,
     "city": "Surgut"
@@ -32696,7 +32706,8 @@
   "SGE": {
     "country": "Germany",
     "latitude": 50.707698822,
-    "longitude": 8.0829696655
+    "longitude": 8.0829696655,
+    "city": "Siegerland"
   },
   "SGF": {
     "country": "United States",
@@ -32930,7 +32941,7 @@
     "city": "Xi'an"
   },
   "SIB": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": -3.6830000877,
     "longitude": 13.3500003815,
     "city": "Sibiti"
@@ -33006,7 +33017,7 @@
     "longitude": 145.0839996338
   },
   "SIP": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 45.0522003174,
     "longitude": 33.9751014709,
     "city": "Simferopol"
@@ -33299,7 +33310,7 @@
     "city": "Skwentna"
   },
   "SKX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.1251296997,
     "longitude": 45.2122573853,
     "city": "Saransk"
@@ -33441,7 +33452,7 @@
     "city": "Salt Cay"
   },
   "SLY": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.5907974243,
     "longitude": 66.611000061,
     "city": "Salekhard"
@@ -33693,7 +33704,7 @@
     "city": "Thandwe"
   },
   "SNX": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 35.5910987854,
     "longitude": 53.495098114,
     "city": "Semnan"
@@ -33729,7 +33740,7 @@
     "city": "Sorocaba"
   },
   "SOE": {
-    "country": "Congo",
+    "country": "Democratic Republic of the Congo",
     "latitude": 2.0669999123,
     "longitude": 14.1330003738,
     "city": "Souanke"
@@ -33920,7 +33931,7 @@
     "city": "Giza"
   },
   "SPY": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 4.7467198372,
     "longitude": -6.6608200073
   },
@@ -34114,13 +34125,13 @@
     "city": "Salisbury"
   },
   "SRX": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 31.0634994507,
     "longitude": 16.5949993134,
     "city": "Sirt"
   },
   "SRY": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 36.635799408,
     "longitude": 53.1935997009,
     "city": "Sari"
@@ -34218,7 +34229,7 @@
     "country": "Angola",
     "latitude": -6.2698998451,
     "longitude": 14.2469997406,
-    "city": "Mbanza Congo"
+    "city": "Mbanza Democratic Republic of the Congo"
   },
   "SSZ": {
     "country": "Brazil",
@@ -34332,7 +34343,7 @@
     "longitude": 72.7417984009
   },
   "STW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 45.1091995239,
     "longitude": 42.1128005981,
     "city": "Stavropol"
@@ -34488,7 +34499,7 @@
     "city": "Sioux City"
   },
   "SUY": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 62.1850013733,
     "longitude": 117.6350021362,
     "city": "Suntar"
@@ -34565,7 +34576,7 @@
     "city": "Savannah"
   },
   "SVO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.9725990295,
     "longitude": 37.4146003723,
     "city": "Moscow"
@@ -34601,7 +34612,7 @@
     "city": "Sparrevohn"
   },
   "SVX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.7430992126,
     "longitude": 60.8027000427,
     "city": "Yekaterinburg"
@@ -34676,7 +34687,7 @@
     "city": "Swansea"
   },
   "SWT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.709400177,
     "longitude": 77.6600036621,
     "city": "Strezhevoy"
@@ -34722,7 +34733,7 @@
     "city": "Senanga"
   },
   "SXI": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 25.9088993073,
     "longitude": 54.5393981934
   },
@@ -34893,7 +34904,7 @@
     "city": "Stornoway"
   },
   "SYZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 29.5391998291,
     "longitude": 52.5898017883,
     "city": "Shiraz"
@@ -34984,7 +34995,8 @@
   "SZW": {
     "country": "Germany",
     "latitude": 53.4269981384,
-    "longitude": 11.7833995819
+    "longitude": 11.7833995819,
+    "city": "Schwerin-Parchim"
   },
   "SZX": {
     "country": "China",
@@ -35227,7 +35239,7 @@
     "city": "Nuku'alofa"
   },
   "TBW": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 52.806098938,
     "longitude": 41.48279953,
     "city": "Tambov"
@@ -35239,7 +35251,7 @@
     "city": "Tshabong"
   },
   "TBZ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 38.1338996887,
     "longitude": 46.2350006104,
     "city": "Tabriz"
@@ -35339,7 +35351,7 @@
     "longitude": 145.608001709
   },
   "TCX": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 33.6678009033,
     "longitude": 56.8927001953,
     "city": "Tabas"
@@ -35635,7 +35647,7 @@
     "city": "Tiga"
   },
   "TGK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 47.2000007629,
     "longitude": 38.8499984741,
     "city": "Taganrog"
@@ -35658,7 +35670,7 @@
     "city": "Tongliao"
   },
   "TGP": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 61.5896987915,
     "longitude": 89.9940032959,
     "city": "Bor"
@@ -35754,7 +35766,7 @@
     "city": "Tichitt"
   },
   "THK": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 17.3999996185,
     "longitude": 104.8000030518,
     "city": "Thakhek"
@@ -35796,7 +35808,7 @@
     "city": "Tianshui"
   },
   "THR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 35.689201355,
     "longitude": 51.3134002686,
     "city": "Tehran"
@@ -35825,7 +35837,7 @@
     "city": "York"
   },
   "THX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.797203064,
     "longitude": 87.9353027344,
     "city": "Turukhansk"
@@ -35913,7 +35925,7 @@
     "city": "Tilin"
   },
   "TIP": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 32.6635017395,
     "longitude": 13.1590003967,
     "city": "Tripoli"
@@ -36008,7 +36020,7 @@
     "city": "Tres Lagoas"
   },
   "TJM": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 57.1896018982,
     "longitude": 65.3243026733,
     "city": "Tyumen"
@@ -36213,7 +36225,7 @@
     "city": "Takotna"
   },
   "TLK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.876389,
     "longitude": 111.044444
   },
@@ -36266,7 +36278,7 @@
     "city": "Talca"
   },
   "TLY": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 44.8149986267,
     "longitude": 136.2920074463,
     "city": "Plastun"
@@ -36531,7 +36543,7 @@
     "city": "Torrance"
   },
   "TOB": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 31.861000061,
     "longitude": 23.906999588,
     "city": "Tobruk"
@@ -36555,7 +36567,7 @@
     "city": "Tozeur"
   },
   "TOF": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.3802986145,
     "longitude": 85.2082977295,
     "city": "Tomsk"
@@ -36645,7 +36657,7 @@
     "city": "Toledo"
   },
   "TOX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.135799408,
     "longitude": 68.2319030762,
     "city": "Tobolsk"
@@ -36759,7 +36771,7 @@
     "city": "Al Habbaniyah"
   },
   "TQL": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.9308013916,
     "longitude": 77.8180999756,
     "city": "Tarko-Sale"
@@ -36943,7 +36955,7 @@
     "city": "Treviso"
   },
   "TSH": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": -6.4383301735,
     "longitude": 20.7947006226,
     "city": "Tshikapa"
@@ -37324,7 +37336,7 @@
     "city": "Huangshan"
   },
   "TXU": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 4.4378094673,
     "longitude": -7.3627281189,
     "city": "Tabou"
@@ -37335,7 +37347,7 @@
     "longitude": 142.0579986572
   },
   "TYD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.284198761,
     "longitude": 124.7789993286,
     "city": "Tynda"
@@ -37546,7 +37558,7 @@
     "city": "Buchanan"
   },
   "UCT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.5668983459,
     "longitude": 53.8046989441,
     "city": "Ukhta"
@@ -37610,7 +37622,7 @@
     "city": "Quelimane"
   },
   "UEN": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.9599990845,
     "longitude": 78.43699646,
     "city": "Urengoy"
@@ -37633,7 +37645,7 @@
     "city": "Quetta"
   },
   "UFA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.5574989319,
     "longitude": 55.8744010925,
     "city": "Ufa"
@@ -37693,7 +37705,7 @@
     "city": "Utila Island"
   },
   "UIK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 58.136100769,
     "longitude": 102.5650024414,
     "city": "Ust-Ilimsk"
@@ -37752,7 +37764,7 @@
     "city": "Kobe"
   },
   "UKG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 70.0110015869,
     "longitude": 135.6450042725,
     "city": "Ust-Kuyga"
@@ -37788,7 +37800,7 @@
     "city": "Nuku"
   },
   "UKX": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.8567008972,
     "longitude": 105.7300033569,
     "city": "Ust-Kut"
@@ -37823,7 +37835,7 @@
     "city": "Al-'Ula"
   },
   "ULK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.7206001282,
     "longitude": 114.825996399,
     "city": "Lensk"
@@ -37863,7 +37875,7 @@
     "city": "Gulu"
   },
   "ULV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.2682991028,
     "longitude": 48.2266998291,
     "city": "Ulyanovsk"
@@ -37875,7 +37887,7 @@
     "city": "Ulusaba"
   },
   "ULY": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.4010009766,
     "longitude": 48.8027000427,
     "city": "Ulyanovsk"
@@ -37911,7 +37923,7 @@
     "city": "Woomera"
   },
   "UMS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.3569984436,
     "longitude": 134.4349975586,
     "city": "Ust-Maya"
@@ -38076,7 +38088,7 @@
     "city": "Uruguaiana"
   },
   "URJ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.1032981873,
     "longitude": 64.8266983032,
     "city": "Uray"
@@ -38099,7 +38111,7 @@
     "city": "Urrao"
   },
   "URS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.7505989075,
     "longitude": 36.2956008911,
     "city": "Kursk"
@@ -38134,7 +38146,7 @@
     "city": "Mabaruma"
   },
   "USK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 66.004699707,
     "longitude": 57.3671989441,
     "city": "Usinsk"
@@ -38163,7 +38175,7 @@
     "city": "Usak"
   },
   "USR": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 64.5500030518,
     "longitude": 143.1150054932,
     "city": "Ust-Nera"
@@ -38245,7 +38257,7 @@
     "city": "Uttaradit"
   },
   "UTS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.4372940063,
     "longitude": 52.2003364563,
     "city": "Ust-Tsylma"
@@ -38263,13 +38275,13 @@
     "city": "Queenstown"
   },
   "UUA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 54.6399993896,
     "longitude": 52.801700592,
     "city": "Bugulma"
   },
   "UUD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.807800293,
     "longitude": 107.43800354,
     "city": "Ulan Ude"
@@ -38286,7 +38298,7 @@
     "longitude": 113.2850036621
   },
   "UUS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 46.8886985779,
     "longitude": 142.7180023193,
     "city": "Yuzhno-Sakhalinsk"
@@ -38669,7 +38681,7 @@
     "longitude": 80.7967987061
   },
   "VGD": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 59.2825012207,
     "longitude": 39.9444007874,
     "city": "Vologda"
@@ -38710,7 +38722,7 @@
     "city": "Van Horn"
   },
   "VHV": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.4580574036,
     "longitude": 120.2691650391,
     "city": "Verkhnevilyuisk"
@@ -38836,7 +38848,7 @@
     "city": "Rach Gia"
   },
   "VKO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.5914993286,
     "longitude": 37.2615013123,
     "city": "Moscow"
@@ -38848,7 +38860,7 @@
     "city": "Vicksburg"
   },
   "VKT": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 67.4886016846,
     "longitude": 63.9930992126,
     "city": "Vorkuta"
@@ -38884,7 +38896,7 @@
     "city": "Port Vila"
   },
   "VLK": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 46.5443000793,
     "longitude": 43.6456985474
   },
@@ -38925,7 +38937,7 @@
     "city": "Valesdir"
   },
   "VLU": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 56.3810997009,
     "longitude": 30.6081008911,
     "city": "Velikiye Luki"
@@ -38949,7 +38961,7 @@
     "city": "Baimuru"
   },
   "VNA": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 15.7094392077,
     "longitude": 106.410698891,
     "city": "Saravane"
@@ -39014,7 +39026,7 @@
     "city": "Vodochoky"
   },
   "VOG": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 48.7825012207,
     "longitude": 44.345500946,
     "city": "Volgograd"
@@ -39049,7 +39061,7 @@
     "city": "Votuporanga"
   },
   "VOZ": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 51.814201355,
     "longitude": 39.229598999,
     "city": "Voronezh"
@@ -39121,7 +39133,7 @@
     "city": "Vredendal"
   },
   "VRI": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 68.8485031128,
     "longitude": 58.2014007568
   },
@@ -39190,7 +39202,7 @@
     "city": "Vitebsk"
   },
   "VTE": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 17.9883003235,
     "longitude": 102.56300354,
     "city": "Vientiane"
@@ -39244,7 +39256,7 @@
     "city": "Valledupar"
   },
   "VUS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 60.7882995605,
     "longitude": 46.2599983215,
     "city": "Velikiy Ustyug"
@@ -39274,7 +39286,7 @@
     "city": "Vastervik"
   },
   "VVO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 43.3989982605,
     "longitude": 132.1479949951,
     "city": "Vladivostok"
@@ -39310,7 +39322,7 @@
     "city": "Vryheid"
   },
   "VYI": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 63.7566680908,
     "longitude": 121.6933364868,
     "city": "Vilyuisk"
@@ -39422,7 +39434,7 @@
     "city": "Warsaw"
   },
   "WAX": {
-    "country": "Libyan Arab Jamahiriya",
+    "country": "Libya",
     "latitude": 32.9523010254,
     "longitude": 12.0155000687,
     "city": "Zuwara"
@@ -39453,7 +39465,8 @@
   "WBG": {
     "country": "Germany",
     "latitude": 54.4593009949,
-    "longitude": 9.5163297653
+    "longitude": 9.5163297653,
+    "city": "Schleswig"
   },
   "WBM": {
     "country": "Papua New Guinea",
@@ -40345,7 +40358,7 @@
     "city": "Bogande"
   },
   "XBJ": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 32.8981018066,
     "longitude": 59.2661018372,
     "city": "Birjand"
@@ -40475,7 +40488,7 @@
     "city": "Kantchari"
   },
   "XKH": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 19.4500007629,
     "longitude": 103.1579971313,
     "city": "Xieng Khouang"
@@ -40743,7 +40756,7 @@
     "city": "Sault Ste Marie"
   },
   "YAN": {
-    "country": "Congo, Democratic Republic",
+    "country": "Congo",
     "latitude": 0.7829999924,
     "longitude": 24.466999054,
     "city": "Yangambi"
@@ -41546,7 +41559,7 @@
     "city": "Waskaganish"
   },
   "YKS": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 62.0932998657,
     "longitude": 129.7709960938,
     "city": "Yakutsk"
@@ -42833,7 +42846,7 @@
     "city": "Zagreb"
   },
   "ZAH": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 29.4757003784,
     "longitude": 60.9062004089,
     "city": "Zahedan"
@@ -42904,13 +42917,13 @@
     "longitude": 148.2149963379
   },
   "ZBR": {
-    "country": "Iran, Islamic Republic Of",
+    "country": "Iran",
     "latitude": 25.4433002472,
     "longitude": 60.3820991516,
     "city": "Chabahar"
   },
   "ZBY": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 19.2329998016,
     "longitude": 101.733001709,
     "city": "Sayaboury"
@@ -43033,7 +43046,7 @@
     "city": "High Prairie"
   },
   "ZIA": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 55.5532989502,
     "longitude": 38.1500015259,
     "city": "Zhukovsky"
@@ -43092,7 +43105,7 @@
     "city": "Sette Cama"
   },
   "ZKP": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 65.7367019653,
     "longitude": 150.705001831,
     "city": "Zyryanka"
@@ -43195,7 +43208,8 @@
   "ZPQ": {
     "country": "Germany",
     "latitude": 52.2911987305,
-    "longitude": 7.3870000839
+    "longitude": 7.3870000839,
+    "city": "Rheine-Bentlage"
   },
   "ZQN": {
     "country": "New Zealand",
@@ -43264,7 +43278,7 @@
     "city": "St. Paul"
   },
   "ZSS": {
-    "country": "Cote D'Ivoire",
+    "country": "Ivory Coast",
     "latitude": 4.9283299446,
     "longitude": -6.1327800751,
     "city": "Sassandra"
@@ -43339,7 +43353,7 @@
     "longitude": 45.4508018494
   },
   "ZVK": {
-    "country": "Lao People's Democratic Republic",
+    "country": "Laos",
     "latitude": 16.5566005707,
     "longitude": 104.7600021362
   },
@@ -43361,7 +43375,7 @@
     "city": "Sylhet"
   },
   "ZZO": {
-    "country": "Russian Federation",
+    "country": "Russia",
     "latitude": 50.6692008972,
     "longitude": 142.761001587,
     "city": "Tymovskoye"
