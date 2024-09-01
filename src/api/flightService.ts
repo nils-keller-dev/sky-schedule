@@ -11,7 +11,8 @@ export const getClosestFlight = async (
   longitude: number,
   searchRadius: number,
   maxAltitude = Infinity,
-  language = 'en'
+  language = 'en',
+  accentedName = true
 ) => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
@@ -21,7 +22,7 @@ export const getClosestFlight = async (
   const closestPlane = flights
     .filter((flight) => !flight.onGround && flight.altitude < maxAltitude)
     .map((flight) =>
-      processFlight(flight, latitude, longitude, airports.default)
+      processFlight(flight, latitude, longitude, airports.default, accentedName)
     )
     .filter((result: ProcessedFlight | null) => result !== null)
     .sort(
@@ -38,7 +39,8 @@ const processFlight = (
   flight: Flight,
   latitude: number,
   longitude: number,
-  airports: Record<string, Airport>
+  airports: Record<string, Airport>,
+  accentedName: boolean
 ): ProcessedFlight | null => {
   const airportOrigin: Airport | undefined =
     airports[flight.originAirportIata as keyof typeof airports]
@@ -47,9 +49,28 @@ const processFlight = (
 
   const distance = flight.getDistanceFrom({ latitude, longitude } as Entity)
 
+  const { city, country } = getCityAndCountry(airportOrigin, accentedName)
+
   return {
-    city: airportOrigin.city,
-    country: airportOrigin.country,
+    city,
+    country,
     distance,
   }
+}
+
+const getCityAndCountry = (airport: Airport, accentedName: boolean) => ({
+  city: accentedName ? airport.city : removeAccents(airport.city),
+  country: accentedName ? airport.country : removeAccents(airport.country),
+})
+
+const removeAccents = <T extends string | undefined>(str: T): T => {
+  if (!str) return str
+  const withoutUmlauts = str
+    .replaceAll('ä', 'ae')
+    .replaceAll('ö', 'oe')
+    .replaceAll('ü', 'ue')
+    .replaceAll('Ä', 'Ae')
+    .replaceAll('Ö', 'Oe')
+    .replaceAll('Ü', 'Ue')
+  return withoutUmlauts.normalize('NFD').replace(/[\u0300-\u036f]/g, '') as T
 }
