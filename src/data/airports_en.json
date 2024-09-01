@@ -7524,7 +7524,8 @@
   "COV": {
     "country": "Portugal",
     "latitude": 40.2648010254,
-    "longitude": -7.4799599648
+    "longitude": -7.4799599648,
+    "city": "Covilha"
   },
   "COW": {
     "country": "Chile",
@@ -38526,7 +38527,7 @@
     "country": "Italy",
     "latitude": 45.5052986145,
     "longitude": 12.3519001007,
-    "city": "Venezia"
+    "city": "Venice"
   },
   "VCH": {
     "country": "Uruguay",

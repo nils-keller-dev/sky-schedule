@@ -2053,7 +2053,7 @@
     "country": "Griechenland",
     "latitude": 37.9364013672,
     "longitude": 23.9444999695,
-    "city": "Athens"
+    "city": "Athen"
   },
   "ATI": {
     "country": "Uruguay",
@@ -7524,7 +7524,8 @@
   "COV": {
     "country": "Portugal",
     "latitude": 40.2648010254,
-    "longitude": -7.4799599648
+    "longitude": -7.4799599648,
+    "city": "Covilha"
   },
   "COW": {
     "country": "Chile",
@@ -35855,7 +35856,7 @@
     "city": "Tahoua"
   },
   "TIA": {
-    "country": "Albania",
+    "country": "Albanien",
     "latitude": 41.4146995544,
     "longitude": 19.7206001282,
     "city": "Tirana"
@@ -38526,7 +38527,7 @@
     "country": "Italien",
     "latitude": 45.5052986145,
     "longitude": 12.3519001007,
-    "city": "Venezia"
+    "city": "Venedig"
   },
   "VCH": {
     "country": "Uruguay",
@@ -39431,7 +39432,7 @@
     "country": "Polen",
     "latitude": 52.1656990051,
     "longitude": 20.9671001434,
-    "city": "Warsaw"
+    "city": "Warschau"
   },
   "WAX": {
     "country": "Libyen",
@@ -39866,7 +39867,7 @@
     "country": "Polen",
     "latitude": 52.4510993958,
     "longitude": 20.6518001556,
-    "city": "Warsaw"
+    "city": "Warschau"
   },
   "WML": {
     "country": "Madagaskar",
