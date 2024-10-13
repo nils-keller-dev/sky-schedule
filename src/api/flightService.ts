@@ -45,15 +45,16 @@ const processFlight = (
   const airportOrigin: Airport | undefined =
     airports[flight.originAirportIata as keyof typeof airports]
 
-  if (!airportOrigin) return null
+  const airportDestination: Airport | undefined =
+    airports[flight.destinationAirportIata as keyof typeof airports]
+
+  if (!airportOrigin && !airportDestination) return null
 
   const distance = flight.getDistanceFrom({ latitude, longitude } as Entity)
 
-  const { city, country } = getCityAndCountry(airportOrigin, accentedName)
-
   return {
-    city,
-    country,
+    origin: getCityAndCountry(airportOrigin, accentedName),
+    destination: getCityAndCountry(airportDestination, accentedName),
     distance,
   }
 }
