@@ -24,13 +24,16 @@ export const getClosestFlight = async (
       flight,
       distance: flight.getDistanceFrom({ latitude, longitude } as Entity),
     }))
-    .sort((a, b) => a.distance - b.distance)[0]?.flight
+    .sort((a, b) => a.distance - b.distance)[0]
 
   if (!closestFlight) return {}
 
   const airports = await import(`../data/airports_${language}.json`)
 
-  return processFlight(closestFlight, airports, accentedName)
+  return {
+    ...processFlight(closestFlight.flight, airports, accentedName),
+    distance: Math.round(closestFlight.distance * 1000),
+  }
 }
 
 const processFlight = (
