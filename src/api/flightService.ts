@@ -1,11 +1,10 @@
 import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
+import aircrafts from '../data/aircrafts.json'
 import { Airport } from '../models/Airport'
 import { Response } from '../models/Response'
 import { feetToMeters } from '../utils'
 
 const frApi = new FlightRadar24API()
-
-type ProcessedFlight = Response & { distance: number }
 
 export const getClosestFlight = async (
   latitude: number,
@@ -18,41 +17,38 @@ export const getClosestFlight = async (
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
 
+  const closestFlight = flights
+    .filter((flight) => !flight.onGround && flight.altitude < maxAltitude)
+    .map((flight) => ({
+      flight,
+      distance: flight.getDistanceFrom({ latitude, longitude } as Entity),
+    }))
+    .sort((a, b) => a.distance - b.distance)[0]?.flight
+
+  if (!closestFlight) return {}
+
   const airports = await import(`../data/airports_${language}.json`)
 
-  const closestPlane = flights
-    .filter((flight) => !flight.onGround && flight.altitude < maxAltitude)
-    .map((flight) =>
-      processFlight(flight, latitude, longitude, airports.default, accentedName)
-    )
-    .sort(
-      (a: ProcessedFlight, b: ProcessedFlight) => a.distance - b.distance
-    )[0]
-
-  return {
-    ...closestPlane,
-    distance: undefined,
-  }
+  return processFlight(closestFlight, airports, accentedName)
 }
 
 const processFlight = (
   flight: Flight,
-  latitude: number,
-  longitude: number,
   airports: Record<string, Airport>,
   accentedName: boolean
-): ProcessedFlight => {
+): Response => {
   const airportOrigin: Airport | undefined = airports[flight.originAirportIata]
   const airportDestination: Airport | undefined =
     airports[flight.destinationAirportIata]
 
-  const distance = flight.getDistanceFrom({ latitude, longitude } as Entity)
+  const aircraft = aircrafts[flight.aircraftCode as keyof typeof aircrafts]
 
   return {
+    aircraft,
     altitude: feetToMeters(flight.altitude) || undefined,
+    number: flight.number,
     origin: getCityAndCountry(airportOrigin, accentedName),
     destination: getCityAndCountry(airportDestination, accentedName),
-    distance,
   }
 }
 
