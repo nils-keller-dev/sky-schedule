@@ -42,12 +42,9 @@ const processFlight = (
   const airportDestination: Airport | undefined =
     airports[flight.destinationAirportIata]
 
-  const aircraft = getFromJson(flight.aircraftCode, aircrafts)
-  const airline = getFromJson(flight.airlineIata, airlines)
-
   return {
-    aircraft,
-    airline,
+    aircraft: getFromJson(flight.aircraftCode, aircrafts),
+    airline: getFromJson(flight.airlineIata, airlines),
     altitude: feetToMeters(flight.altitude) || undefined,
     number: flight.number,
     origin: getCityAndCountry(airportOrigin, accentedName),
