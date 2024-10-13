@@ -3,7 +3,7 @@ import aircrafts from '../data/aircrafts.json'
 import airlines from '../data/airlines.json'
 import { Airport } from '../models/Airport'
 import { Response } from '../models/Response'
-import { feetToMeters } from '../utils'
+import { feetToMeters, getFromJson, removeAccents } from '../utils'
 
 const frApi = new FlightRadar24API()
 
@@ -42,8 +42,8 @@ const processFlight = (
   const airportDestination: Airport | undefined =
     airports[flight.destinationAirportIata]
 
-  const aircraft = aircrafts[flight.aircraftCode as keyof typeof aircrafts]
-  const airline = airlines[flight.airlineIata as keyof typeof airlines]
+  const aircraft = getFromJson(flight.aircraftCode, aircrafts)
+  const airline = getFromJson(flight.airlineIata, airlines)
 
   return {
     aircraft,
@@ -65,16 +65,4 @@ const getCityAndCountry = (
       country: accentedName ? airport.country : removeAccents(airport.country),
     }
   )
-}
-
-const removeAccents = <T extends string | undefined>(str: T): T => {
-  if (!str) return str
-  const withoutUmlauts = str
-    .replaceAll('ä', 'ae')
-    .replaceAll('ö', 'oe')
-    .replaceAll('ü', 'ue')
-    .replaceAll('Ä', 'Ae')
-    .replaceAll('Ö', 'Oe')
-    .replaceAll('Ü', 'Ue')
-  return withoutUmlauts.normalize('NFD').replace(/[\u0300-\u036f]/g, '') as T
 }
