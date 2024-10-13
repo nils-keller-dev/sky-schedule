@@ -1,5 +1,6 @@
 import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
 import aircrafts from '../data/aircrafts.json'
+import airlines from '../data/airlines.json'
 import { Airport } from '../models/Airport'
 import { Response } from '../models/Response'
 import { feetToMeters } from '../utils'
@@ -42,9 +43,11 @@ const processFlight = (
     airports[flight.destinationAirportIata]
 
   const aircraft = aircrafts[flight.aircraftCode as keyof typeof aircrafts]
+  const airline = airlines[flight.airlineIata as keyof typeof airlines]
 
   return {
     aircraft,
+    airline,
     altitude: feetToMeters(flight.altitude) || undefined,
     number: flight.number,
     origin: getCityAndCountry(airportOrigin, accentedName),
