@@ -1,4 +1,5 @@
 export interface Response {
+  altitude?: number
   origin?: ResponseAirport
   destination?: ResponseAirport
 }
