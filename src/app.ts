@@ -1,49 +1,42 @@
-import fastify from 'npm:fastify'
 import { getClosestFlight } from './api/flightService.ts'
 
-const app = fastify({ logger: true })
-
-const routeOptions = {
-  schema: {
-    querystring: {
-      type: 'object',
-      properties: {
-        location: { type: 'string' },
-        radius: { type: 'number', minimum: 1 },
-        maxAltitude: { type: 'number', minimum: 0, default: Infinity },
-        language: { type: 'string', enum: ['en', 'de'], default: 'en' },
-        accentedName: { type: 'boolean', default: true },
-      },
-      required: ['location', 'radius'],
-    },
-  },
-}
-
-interface BoundsQuery {
-  location: string
-  radius: number
-  maxAltitude?: number
+interface QueryParams {
+  location?: string
+  radius?: string
+  maxAltitude?: string
   language?: string
-  accentedName?: boolean
+  accentedName?: string
 }
 
-app.get<{ Querystring: BoundsQuery }>(
-  '/closestPlane',
-  routeOptions,
-  async (request) => {
-    const { location, radius, maxAltitude, language, accentedName } =
-      request.query
-    const [latitude, longitude] = location.split(',').map(Number)
+const closestPlane = async (query: QueryParams) => {
+  const { location, radius, maxAltitude, language, accentedName } = query
 
-    return await getClosestFlight(
-      latitude,
-      longitude,
-      radius,
-      maxAltitude,
-      language,
-      accentedName,
-    )
-  },
-)
+  if (!location || !radius) {
+    return {
+      body: 'Missing required parameters',
+      init: { status: 400 },
+    }
+  }
 
-export default app
+  const [latitude, longitude] = location.split(',').map(Number)
+
+  const response = await getClosestFlight(
+    latitude,
+    longitude,
+    Number(radius),
+    Number(maxAltitude) ?? Infinity,
+    language ?? 'en',
+    accentedName !== 'false',
+  )
+
+  return {
+    body: JSON.stringify(response),
+    init: {
+      headers: {
+        'content-type': 'application/json; charset=utf-8',
+      },
+    },
+  }
+}
+
+export default closestPlane
