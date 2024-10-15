@@ -1,4 +1,4 @@
-import { Entity, Flight, FlightRadar24API } from 'npm:flightradarapi'
+import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
 import aircrafts from '../data/aircrafts.json' with { type: 'json' }
 import airlines from '../data/airlines.json' with { type: 'json' }
 import { Airport } from '../models/Airport.ts'
