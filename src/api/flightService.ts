@@ -1,9 +1,9 @@
-import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
-import aircrafts from '../data/aircrafts.json'
-import airlines from '../data/airlines.json'
-import { Airport } from '../models/Airport'
-import { Response } from '../models/Response'
-import { feetToMeters, getFromJson, removeAccents } from '../utils'
+import { Entity, Flight, FlightRadar24API } from 'npm:flightradarapi'
+import aircrafts from '../data/aircrafts.json' with { type: 'json' }
+import airlines from '../data/airlines.json' with { type: 'json' }
+import { Airport } from '../models/Airport.ts'
+import { Response } from '../models/Response.ts'
+import { feetToMeters, getFromJson, removeAccents } from '../utils.ts'
 
 const frApi = new FlightRadar24API()
 
@@ -13,7 +13,7 @@ export const getClosestFlight = async (
   searchRadius: number,
   maxAltitude = Infinity,
   language = 'en',
-  accentedName = true
+  accentedName = true,
 ) => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
@@ -28,10 +28,12 @@ export const getClosestFlight = async (
 
   if (!closestFlight) return {}
 
-  const airports = await import(`../data/airports_${language}.json`)
+  const airports = await import(`../data/airports_${language}.json`, {
+    with: { type: 'json' },
+  })
 
   return {
-    ...processFlight(closestFlight.flight, airports, accentedName),
+    ...processFlight(closestFlight.flight, airports.default, accentedName),
     distance: Math.round(closestFlight.distance * 1000),
   }
 }
@@ -39,7 +41,7 @@ export const getClosestFlight = async (
 const processFlight = (
   flight: Flight,
   airports: Record<string, Airport>,
-  accentedName: boolean
+  accentedName: boolean,
 ): Response => {
   const airportOrigin: Airport | undefined = airports[flight.originAirportIata]
   const airportDestination: Airport | undefined =
@@ -57,7 +59,7 @@ const processFlight = (
 
 const getCityAndCountry = (
   airport: Airport | undefined,
-  accentedName: boolean
+  accentedName: boolean,
 ) => {
   return (
     airport && {

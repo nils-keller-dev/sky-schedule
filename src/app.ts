@@ -1,5 +1,5 @@
-import fastify from 'fastify'
-import { getClosestFlight } from './api/flightService'
+import fastify from 'npm:fastify'
+import { getClosestFlight } from './api/flightService.ts'
 
 const app = fastify({ logger: true })
 
@@ -41,9 +41,9 @@ app.get<{ Querystring: BoundsQuery }>(
       radius,
       maxAltitude,
       language,
-      accentedName
+      accentedName,
     )
-  }
+  },
 )
 
 export default app

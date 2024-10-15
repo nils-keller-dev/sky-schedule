@@ -1,3 +1,9 @@
+const feetToMeters = (feet: number) => Math.round(feet * 0.3048)
+
+const getFromJson = (key: string, json: Record<string, string>) => {
+  return json[key] ?? key
+}
+
 const removeAccents = <T extends string | undefined>(str: T): T => {
   if (!str) return str
   const withoutUmlauts = str
@@ -10,10 +16,4 @@ const removeAccents = <T extends string | undefined>(str: T): T => {
   return withoutUmlauts.normalize('NFD').replace(/[\u0300-\u036f]/g, '') as T
 }
 
-const feetToMeters = (feet: number) => Math.round(feet * 0.3048)
-
-const getFromJson = (key: string, json: Record<string, string>) => {
-  return json[key] ?? key
-}
-
-export { removeAccents, feetToMeters, getFromJson }
+export { feetToMeters, getFromJson, removeAccents }
