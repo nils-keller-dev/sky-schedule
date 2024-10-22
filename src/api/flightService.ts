@@ -48,6 +48,7 @@ const processFlight = (
     airports[flight.destinationAirportIata]
 
   return {
+    id: flight.id,
     aircraft: getFromJson(flight.aircraftCode, aircrafts),
     airline: getFromJson(flight.airlineIata, airlines),
     altitude: feetToMeters(flight.altitude) || undefined,

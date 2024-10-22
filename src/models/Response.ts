@@ -1,4 +1,5 @@
 export interface Response {
+  id?: string
   aircraft?: string
   altitude?: number
   airline?: string
