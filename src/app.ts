@@ -5,11 +5,10 @@ interface QueryParams {
   radius?: string
   maxAltitude?: string
   language?: string
-  accentedName?: string
 }
 
 const closestPlane = async (query: QueryParams) => {
-  const { location, radius, maxAltitude, language, accentedName } = query
+  const { location, radius, maxAltitude, language } = query
 
   if (!location || !radius) {
     return {
@@ -26,7 +25,6 @@ const closestPlane = async (query: QueryParams) => {
     Number(radius),
     Number(maxAltitude) ?? Infinity,
     language ?? 'en',
-    accentedName !== 'false',
   )
 
   return {
