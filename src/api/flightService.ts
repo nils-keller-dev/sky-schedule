@@ -13,7 +13,7 @@ export const getClosestFlight = async (
   searchRadius: number,
   maxAltitude: number,
   language: string,
-) => {
+): Promise<Response> => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
 

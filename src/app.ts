@@ -11,30 +11,18 @@ const closestPlane = async (query: QueryParams) => {
   const { location, radius, maxAltitude, language } = query
 
   if (!location || !radius) {
-    return {
-      body: 'Missing required parameters',
-      init: { status: 400 },
-    }
+    return null
   }
 
   const [latitude, longitude] = location.split(',').map(Number)
 
-  const response = await getClosestFlight(
+  return await getClosestFlight(
     latitude,
     longitude,
     Number(radius),
     Number(maxAltitude) ?? Infinity,
     language ?? 'en',
   )
-
-  return {
-    body: JSON.stringify(response),
-    init: {
-      headers: {
-        'content-type': 'application/json; charset=utf-8',
-      },
-    },
-  }
 }
 
 export default closestPlane

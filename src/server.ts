@@ -1,3 +1,4 @@
+import { buildLogArray, log } from './utils.ts'
 import closestPlane from './app.ts'
 
 const routes = {
@@ -10,9 +11,7 @@ const hostname = '0.0.0.0'
 Deno.serve({ port, hostname }, async (request: Request) => {
   console.log('---')
   console.log(new Date().toISOString())
-  console.log('-')
   console.log(request.url)
-  console.log('-')
 
   const fullPath = request.url.split('/')[3].split('?')
   const searchParams = new URLSearchParams(fullPath[1])
@@ -23,9 +22,21 @@ Deno.serve({ port, hostname }, async (request: Request) => {
     return new Response('Not found', { status: 404 })
   }
 
-  const { body, init } = await routeFunction?.(queryObject)
+  const response = await routeFunction?.(queryObject)
 
-  console.log(body)
+  if (!response) {
+    return new Response('Bad request', { status: 400 })
+  }
 
-  return new Response(body, init)
+  if (Object.keys(response).length > 0) {
+    const logArray = buildLogArray(queryObject, response)
+    log(`${logArray.join(',')}\n`, 'log')
+  }
+
+  console.log(response)
+
+  return new Response(
+    JSON.stringify(response),
+    { headers: { 'content-type': 'application/json; charset=utf-8' } },
+  )
 })
