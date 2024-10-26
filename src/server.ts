@@ -19,6 +19,10 @@ Deno.serve({ port, hostname }, async (request: Request) => {
   const queryObject = Object.fromEntries(searchParams.entries())
 
   const routeFunction = routes[fullPath[0] as keyof typeof routes]
+  if (!routeFunction) {
+    return new Response('Not found', { status: 404 })
+  }
+
   const { body, init } = await routeFunction?.(queryObject)
 
   console.log(body)
