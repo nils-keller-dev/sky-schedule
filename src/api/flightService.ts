@@ -3,7 +3,7 @@ import aircrafts from '../data/aircrafts.json' with { type: 'json' }
 import airlines from '../data/airlines.json' with { type: 'json' }
 import { Airport } from '../models/Airport.ts'
 import { Response } from '../models/Response.ts'
-import { feetToMeters, getFromJson } from '../utils.ts'
+import { feetToMeters, getFromJson } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
 

@@ -1,5 +1,6 @@
-import { buildLogArray, log } from './utils.ts'
 import closestPlane from './app.ts'
+import { verifyClient } from './utils/authentication.ts'
+import { buildLogArray, log } from './utils/utils.ts'
 
 const routes = {
   'closestPlane': closestPlane,
@@ -10,6 +11,14 @@ const hostname = '0.0.0.0'
 
 Deno.serve({ port, hostname }, async (request: Request) => {
   console.log('---')
+
+  const name = await verifyClient(request.headers.get('token'))
+  if (!name) {
+    console.log('Unauthorized')
+    return new Response('Unauthorized', { status: 401 })
+  }
+
+  console.log(name)
   console.log(new Date().toISOString())
   console.log(request.url)
 
@@ -30,7 +39,7 @@ Deno.serve({ port, hostname }, async (request: Request) => {
 
   if (Object.keys(response).length > 0) {
     const logArray = buildLogArray(queryObject, response)
-    log(`${logArray.join(',')}\n`, 'log')
+    log(`${logArray.join(',')}\n`, name)
   }
 
   console.log(response)

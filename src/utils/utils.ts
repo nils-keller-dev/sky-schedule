@@ -1,4 +1,4 @@
-import type { Response } from './models/Response.ts'
+import type { Response } from '../models/Response.ts'
 
 const buildLogArray = (
   queryObject: Record<string, string>,
