@@ -4126,7 +4126,7 @@
     "country": "Indien",
     "latitude": 13.1978998184,
     "longitude": 77.7062988281,
-    "city": "Bangalore"
+    "city": "Bengaluru"
   },
   "BLS": {
     "country": "Australien",
@@ -30312,6 +30312,12 @@
     "latitude": 52.3875007629,
     "longitude": -126.5960006714,
     "city": "Bella Coola"
+  },
+  "QCH": {
+    "country": "Deutschland",
+    "latitude": 50.768833,
+    "longitude": 7.164,
+    "city": "Bonn Hangelar"
   },
   "QCY": {
     "country": "Vereinigtes Königreich",
