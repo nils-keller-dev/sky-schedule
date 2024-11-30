@@ -1,9 +1,8 @@
-import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
-import aircrafts from '../data/aircrafts.json' with { type: 'json' }
-import airlines from '../data/airlines.json' with { type: 'json' }
+import { Entity, FlightRadar24API } from 'flightradarapi'
 import { Airport } from '../models/Airport.ts'
+import { DetailedFlight } from '../models/DetailedFlight.ts'
 import { Response } from '../models/Response.ts'
-import { feetToMeters, getFromJson } from '../utils/utils.ts'
+import { feetToMeters } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
 
@@ -31,26 +30,31 @@ export const getClosestFlight = async (
     with: { type: 'json' },
   })
 
+  const detailedFlight = await frApi.getFlightDetails(
+    closestFlight.flight,
+  ) as DetailedFlight
+
   return {
-    ...processFlight(closestFlight.flight, airports.default),
+    ...processFlight(detailedFlight, airports.default),
     distance: Math.round(closestFlight.distance * 1000),
   }
 }
 
 const processFlight = (
-  flight: Flight,
+  flight: DetailedFlight,
   airports: Record<string, Airport>,
 ): Response => {
-  const airportOrigin: Airport | undefined = airports[flight.originAirportIata]
+  const airportOrigin: Airport | undefined =
+    airports[flight.airport.origin?.code.iata ?? -1]
   const airportDestination: Airport | undefined =
-    airports[flight.destinationAirportIata]
+    airports[flight.airport.destination?.code.iata ?? -1]
 
   return {
-    id: flight.id,
-    aircraft: getFromJson(flight.aircraftCode, aircrafts),
-    airline: getFromJson(flight.airlineIata, airlines),
-    altitude: feetToMeters(flight.altitude) || undefined,
-    number: flight.number,
+    id: flight.identification.id,
+    aircraft: flight.aircraft.model.text,
+    airline: flight.airline.code ? flight.airline.name : undefined,
+    altitude: feetToMeters(flight.trail[0].alt) || undefined,
+    number: flight.identification.callsign,
     origin: getCityAndCountry(airportOrigin),
     destination: getCityAndCountry(airportDestination),
   }
