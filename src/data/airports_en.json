@@ -30319,6 +30319,12 @@
     "longitude": 7.164,
     "city": "Bonn Hangelar"
   },
+  "QCP": {
+    "country": "Germany",
+    "latitude": 49.120419,
+    "longitude": 9.781542,
+    "city": "Schwabisch Hall"
+  },
   "QCY": {
     "country": "United Kingdom",
     "latitude": 53.0929985046,
