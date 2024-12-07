@@ -20,7 +20,7 @@ const closestPlane = async (query: QueryParams) => {
     latitude,
     longitude,
     Number(radius),
-    Number(maxAltitude) ?? Infinity,
+    Number(maxAltitude) || Infinity,
     language ?? 'en',
   )
 }
