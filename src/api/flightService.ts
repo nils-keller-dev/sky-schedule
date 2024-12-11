@@ -1,7 +1,7 @@
 import { Entity, FlightRadar24API } from 'flightradarapi'
 import { Airport } from '../models/Airport.ts'
 import { DetailedFlight } from '../models/DetailedFlight.ts'
-import { Response } from '../models/Response.ts'
+import { Response, ResponseAirport } from '../models/Response.ts'
 import { feetToMeters } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
@@ -12,6 +12,7 @@ export const getClosestFlight = async (
   searchRadius: number,
   maxAltitude: number,
   language: string,
+  countryBlacklist: string[],
 ): Promise<Response> => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
@@ -35,7 +36,7 @@ export const getClosestFlight = async (
   ) as DetailedFlight
 
   return {
-    ...processFlight(detailedFlight, airports.default),
+    ...processFlight(detailedFlight, airports.default, countryBlacklist),
     distance: Math.round(closestFlight.distance * 1000),
   }
 }
@@ -43,7 +44,12 @@ export const getClosestFlight = async (
 const processFlight = (
   flight: DetailedFlight,
   airports: Record<string, Airport>,
+  countryBlacklist: string[],
 ): Response => {
+  const countryCodeOrigin = flight.airport.origin?.position.country.code ?? ''
+  const countryCodeDestination =
+    flight.airport.destination?.position.country.code ?? ''
+
   const airportOrigin: Airport | undefined =
     airports[flight.airport.origin?.code.iata ?? -1]
   const airportDestination: Airport | undefined =
@@ -55,16 +61,28 @@ const processFlight = (
     airline: flight.airline.code ? flight.airline.name : undefined,
     altitude: feetToMeters(flight.trail[0].alt) || undefined,
     number: flight.identification.callsign,
-    origin: getCityAndCountry(airportOrigin),
-    destination: getCityAndCountry(airportDestination),
+    origin: getCityAndCountry(
+      airportOrigin,
+      countryBlacklist.includes(countryCodeOrigin),
+    ),
+    destination: getCityAndCountry(
+      airportDestination,
+      countryBlacklist.includes(countryCodeDestination),
+    ),
   }
 }
 
 const getCityAndCountry = (
   airport: Airport | undefined,
-) => (
-  airport && {
-    city: airport.city,
-    country: airport.country,
+  removeCountry?: boolean,
+): ResponseAirport | undefined => {
+  if (!airport) return undefined
+
+  const { city, country } = airport
+  if (!city && (!country || removeCountry)) return undefined
+
+  return {
+    city,
+    country: removeCountry ? undefined : country,
   }
-)
+}

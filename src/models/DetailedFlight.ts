@@ -25,4 +25,9 @@ interface DetailedFlightAirport {
   code: {
     iata: string
   }
+  position: {
+    country: {
+      code: string
+    }
+  }
 }

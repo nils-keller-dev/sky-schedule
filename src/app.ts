@@ -5,10 +5,11 @@ interface QueryParams {
   radius?: string
   maxAltitude?: string
   language?: string
+  countryBlacklist?: string
 }
 
 const closestPlane = async (query: QueryParams) => {
-  const { location, radius, maxAltitude, language } = query
+  const { location, radius, maxAltitude, language, countryBlacklist } = query
 
   if (!location || !radius) {
     return null
@@ -22,6 +23,7 @@ const closestPlane = async (query: QueryParams) => {
     Number(radius),
     Number(maxAltitude) || Infinity,
     language ?? 'en',
+    countryBlacklist?.split(',') ?? [],
   )
 }
 

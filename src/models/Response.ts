@@ -9,7 +9,7 @@ export interface Response {
   destination?: ResponseAirport
 }
 
-interface ResponseAirport {
+export interface ResponseAirport {
   city?: string
-  country: string
+  country?: string
 }
