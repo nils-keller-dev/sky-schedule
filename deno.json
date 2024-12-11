@@ -8,6 +8,7 @@
     "singleQuote": true
   },
   "imports": {
+    "flat": "https://esm.sh/flat@6.0.1",
     "flightradarapi": "npm:flightradarapi@^1.3.33",
     "djwt": "https://deno.land/x/djwt@v3.0.2/mod.ts"
   }

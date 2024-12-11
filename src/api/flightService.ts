@@ -1,8 +1,8 @@
 import { Entity, FlightRadar24API } from 'flightradarapi'
 import { Airport } from '../models/Airport.ts'
 import { DetailedFlight } from '../models/DetailedFlight.ts'
-import { Response, ResponseAirport } from '../models/Response.ts'
-import { feetToMeters } from '../utils/utils.ts'
+import { FormattedFlight, RawFlight, Response } from '../models/Response.ts'
+import { feetToMeters, formatString } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
 
@@ -12,7 +12,7 @@ export const getClosestFlight = async (
   searchRadius: number,
   maxAltitude: number,
   language: string,
-  countryBlacklist: string[],
+  formatStrings: string[],
 ): Promise<Response> => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
   const flights = await frApi.getFlights(null, bounds)
@@ -35,20 +35,45 @@ export const getClosestFlight = async (
     closestFlight.flight,
   ) as DetailedFlight
 
+  const rawFlight = processFlight(detailedFlight, airports.default)
+
   return {
-    ...processFlight(detailedFlight, airports.default, countryBlacklist),
+    ...formatFlight(rawFlight, formatStrings),
+    ...rawFlight,
     distance: Math.round(closestFlight.distance * 1000),
   }
+}
+
+const formatFlight = (
+  flight: RawFlight,
+  formatStrings: string[],
+): FormattedFlight => {
+  const keys = [
+    'primaryTop',
+    'primaryBottom',
+    'secondaryTop',
+    'secondaryBottom',
+  ]
+
+  const returnValue: FormattedFlight = {}
+
+  keys.forEach((key, index) => {
+    returnValue[key as keyof FormattedFlight] = formatString(
+      formatStrings[index] ?? '',
+      flight,
+    )
+  })
+
+  return returnValue
 }
 
 const processFlight = (
   flight: DetailedFlight,
   airports: Record<string, Airport>,
-  countryBlacklist: string[],
-): Response => {
-  const countryCodeOrigin = flight.airport.origin?.position.country.code ?? ''
-  const countryCodeDestination =
-    flight.airport.destination?.position.country.code ?? ''
+): RawFlight => {
+  const countryCodeOrigin = flight.airport.origin?.position.country.code
+  const countryCodeDestination = flight.airport.destination?.position.country
+    .code
 
   const airportOrigin: Airport | undefined =
     airports[flight.airport.origin?.code.iata ?? -1]
@@ -61,28 +86,20 @@ const processFlight = (
     airline: flight.airline.code ? flight.airline.name : undefined,
     altitude: feetToMeters(flight.trail[0].alt) || undefined,
     number: flight.identification.callsign,
-    origin: getCityAndCountry(
-      airportOrigin,
-      countryBlacklist.includes(countryCodeOrigin),
-    ),
-    destination: getCityAndCountry(
-      airportDestination,
-      countryBlacklist.includes(countryCodeDestination),
-    ),
+    origin: getCityAndCountry(airportOrigin, countryCodeOrigin),
+    destination: getCityAndCountry(airportDestination, countryCodeDestination),
   }
 }
 
 const getCityAndCountry = (
-  airport: Airport | undefined,
-  removeCountry?: boolean,
-): ResponseAirport | undefined => {
+  airport?: Airport,
+  countryCode?: string,
+) => {
   if (!airport) return undefined
 
-  const { city, country } = airport
-  if (!city && (!country || removeCountry)) return undefined
-
   return {
-    city,
-    country: removeCountry ? undefined : country,
+    city: airport.city,
+    country: airport.country,
+    countryCode,
   }
 }

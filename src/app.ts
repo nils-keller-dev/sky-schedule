@@ -1,15 +1,15 @@
 import { getClosestFlight } from './api/flightService.ts'
 
-interface QueryParams {
+export interface QueryParams {
   location?: string
   radius?: string
   maxAltitude?: string
   language?: string
-  countryBlacklist?: string
+  format?: string
 }
 
 const closestPlane = async (query: QueryParams) => {
-  const { location, radius, maxAltitude, language, countryBlacklist } = query
+  const { location, radius, maxAltitude, language, format } = query
 
   if (!location || !radius) {
     return null
@@ -23,7 +23,7 @@ const closestPlane = async (query: QueryParams) => {
     Number(radius),
     Number(maxAltitude) || Infinity,
     language ?? 'en',
-    countryBlacklist?.split(',') ?? [],
+    format?.split(';') ?? [],
   )
 }
 

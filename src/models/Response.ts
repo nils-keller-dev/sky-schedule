@@ -1,4 +1,14 @@
-export interface Response {
+export type Response = RawFlight | FormattedFlight
+
+export interface FormattedFlight {
+  id?: string
+  primaryTop?: string
+  primaryBottom?: string
+  secondaryTop?: string
+  secondaryBottom?: string
+}
+
+export interface RawFlight {
   id?: string
   aircraft?: string
   altitude?: number
@@ -11,5 +21,6 @@ export interface Response {
 
 export interface ResponseAirport {
   city?: string
-  country?: string
+  country: string
+  countryCode?: string
 }
