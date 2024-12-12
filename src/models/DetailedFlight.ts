@@ -8,7 +8,7 @@ export interface DetailedFlight {
       text: string
     }
   }
-  airline: {
+  airline?: {
     name: string
     code: string | null
   }

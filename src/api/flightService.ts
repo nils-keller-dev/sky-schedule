@@ -73,7 +73,7 @@ const processFlight = (
 ): RawFlight => ({
   id: flight.identification.id,
   aircraft: flight.aircraft.model.text,
-  airline: flight.airline.code ? flight.airline.name : undefined,
+  airline: flight.airline?.code ? flight.airline.name : undefined,
   altitude: feetToMeters(flight.trail[0].alt) || undefined,
   number: flight.identification.callsign,
   origin: getCityAndCountry(airports, flight, 'origin'),
