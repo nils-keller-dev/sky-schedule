@@ -70,36 +70,35 @@ const formatFlight = (
 const processFlight = (
   flight: DetailedFlight,
   airports: Record<string, Airport>,
-): RawFlight => {
-  const countryCodeOrigin = flight.airport.origin?.position.country.code
-  const countryCodeDestination = flight.airport.destination?.position.country
-    .code
-
-  const airportOrigin: Airport | undefined =
-    airports[flight.airport.origin?.code.iata ?? -1]
-  const airportDestination: Airport | undefined =
-    airports[flight.airport.destination?.code.iata ?? -1]
-
-  return {
-    id: flight.identification.id,
-    aircraft: flight.aircraft.model.text,
-    airline: flight.airline.code ? flight.airline.name : undefined,
-    altitude: feetToMeters(flight.trail[0].alt) || undefined,
-    number: flight.identification.callsign,
-    origin: getCityAndCountry(airportOrigin, countryCodeOrigin),
-    destination: getCityAndCountry(airportDestination, countryCodeDestination),
-  }
-}
+): RawFlight => ({
+  id: flight.identification.id,
+  aircraft: flight.aircraft.model.text,
+  airline: flight.airline.code ? flight.airline.name : undefined,
+  altitude: feetToMeters(flight.trail[0].alt) || undefined,
+  number: flight.identification.callsign,
+  origin: getCityAndCountry(airports, flight, 'origin'),
+  destination: getCityAndCountry(airports, flight, 'destination'),
+})
 
 const getCityAndCountry = (
-  airport?: Airport,
-  countryCode?: string,
+  airports: Record<string, Airport>,
+  flight: DetailedFlight,
+  target: 'origin' | 'destination',
 ) => {
-  if (!airport) return undefined
+  const countryCode = flight.airport[target]?.position.country.code
+  const iata = flight.airport[target]?.code.iata
+  const airport: Airport | undefined = airports[iata ?? -1]
+  const city = airport?.city
+  const country = airport?.country
+
+  if (!city && !country && !countryCode && !iata) {
+    return undefined
+  }
 
   return {
-    city: airport.city,
-    country: airport.country,
+    city,
+    country,
     countryCode,
+    iata,
   }
 }

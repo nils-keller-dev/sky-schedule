@@ -23,4 +23,5 @@ export interface ResponseAirport {
   city?: string
   country: string
   countryCode?: string
+  iata?: string
 }
