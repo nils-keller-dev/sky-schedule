@@ -1,10 +1,15 @@
-import { Entity, FlightRadar24API } from 'flightradarapi'
+import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
 import { Airport } from '../models/Airport.ts'
 import { DetailedFlight } from '../models/DetailedFlight.ts'
 import { FormattedFlight, RawFlight, Response } from '../models/Response.ts'
+import { useShiftArray } from '../utils/useShiftArray.ts'
 import { feetToMeters, formatString } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
+
+const { shiftArray: cachedFlights, push: pushCache } = useShiftArray<
+  DetailedFlight
+>()
 
 export const getClosestFlight = async (
   latitude: number,
@@ -31,11 +36,23 @@ export const getClosestFlight = async (
     with: { type: 'json' },
   })
 
-  const detailedFlight = await frApi.getFlightDetails(
-    closestFlight.flight,
-  ) as DetailedFlight
+  let detailedFlight = cachedFlights.find(
+    (cachedFlight) =>
+      cachedFlight.identification.id === closestFlight.flight.id,
+  )
 
-  const rawFlight = processFlight(detailedFlight, airports.default)
+  if (!detailedFlight) {
+    detailedFlight = await frApi.getFlightDetails(
+      closestFlight.flight,
+    ) as DetailedFlight
+    pushCache(detailedFlight)
+  }
+
+  const rawFlight = processFlight(
+    detailedFlight,
+    closestFlight.flight,
+    airports.default,
+  )
 
   return {
     ...formatFlight(rawFlight, formatStrings),
@@ -68,16 +85,20 @@ const formatFlight = (
 }
 
 const processFlight = (
-  flight: DetailedFlight,
+  detailedFlight: DetailedFlight,
+  flight: Flight,
   airports: Record<string, Airport>,
 ): RawFlight => ({
-  id: flight.identification.id,
-  aircraft: flight.aircraft.model.text,
-  airline: flight.airline?.code ? flight.airline.name : undefined,
-  altitude: feetToMeters(flight.trail[0].alt) || undefined,
-  number: flight.identification.callsign,
-  origin: getCityAndCountry(airports, flight, 'origin'),
-  destination: getCityAndCountry(airports, flight, 'destination'),
+  id: flight.id ?? detailedFlight.identification.id,
+  aircraft: detailedFlight.aircraft.model.text,
+  airline: detailedFlight.airline?.code
+    ? detailedFlight.airline.name
+    : undefined,
+  altitude: feetToMeters(flight.altitude ?? detailedFlight.trail[0].alt) ||
+    undefined,
+  number: flight.callsign ?? detailedFlight.identification.callsign,
+  origin: getCityAndCountry(airports, detailedFlight, 'origin'),
+  destination: getCityAndCountry(airports, detailedFlight, 'destination'),
 })
 
 const getCityAndCountry = (
