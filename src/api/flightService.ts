@@ -38,7 +38,7 @@ export const getClosestFlight = async (
 
   let detailedFlight = cachedFlights.find(
     (cachedFlight) =>
-      cachedFlight.identification.id === closestFlight.flight.id,
+      cachedFlight.identification?.id === closestFlight.flight.id,
   )
 
   if (!detailedFlight) {
