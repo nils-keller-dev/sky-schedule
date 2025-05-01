@@ -20019,6 +20019,10 @@
     "country": "Kanada",
     "city": "Bella Coola"
   },
+  "QCD": {
+    "country": "Deutschland",
+    "city": "Diepholz"
+  },
   "QCH": {
     "country": "Deutschland",
     "city": "Bonn Hangelar"
@@ -20034,6 +20038,14 @@
   "QCY": {
     "country": "Vereinigtes Königreich",
     "city": "Coningsby"
+  },
+  "QEE": {
+    "country": "Deutschland",
+    "city": "Eberswalde"
+  },
+  "QEO": {
+    "country": "Deutschland",
+    "city": "Zellendorf"
   },
   "QHU": {
     "country": "Deutschland",
