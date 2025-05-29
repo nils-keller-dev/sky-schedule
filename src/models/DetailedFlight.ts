@@ -4,7 +4,7 @@ export interface DetailedFlight {
     callsign: string
   }
   aircraft: {
-    model: {
+    model?: {
       text: string
     }
   }

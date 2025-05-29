@@ -90,7 +90,7 @@ const processFlight = (
   airports: Record<string, Airport>,
 ): RawFlight => ({
   id: flight.id ?? detailedFlight.identification.id,
-  aircraft: detailedFlight.aircraft.model.text,
+  aircraft: detailedFlight.aircraft.model?.text,
   airline: detailedFlight.airline?.code
     ? detailedFlight.airline.name
     : undefined,
