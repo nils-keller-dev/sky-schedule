@@ -13123,7 +13123,7 @@
   },
   "LCA": {
     "country": "Zypern",
-    "city": "Larnarca"
+    "city": "Larnaka"
   },
   "LCC": {
     "country": "Italien"
@@ -19552,8 +19552,8 @@
     "country": "Portugal"
   },
   "PRN": {
-    "country": "KS",
-    "city": "Prishtina"
+    "country": "Kosovo",
+    "city": "Pristina"
   },
   "PRO": {
     "country": "USA",
@@ -20061,6 +20061,10 @@
   "QRA": {
     "country": "Südafrika",
     "city": "Johannesburg"
+  },
+  "QRM": {
+    "country": "Deutschland",
+    "city": "Magdeburg"
   },
   "QRO": {
     "country": "Mexiko",
