@@ -2,9 +2,14 @@ import { Entity, Flight, FlightRadar24API } from 'flightradarapi'
 import { Airport } from '../models/Airport.ts'
 import { DetailedFlight } from '../models/DetailedFlight.ts'
 import { FormattedFlight, RawFlight, Response } from '../models/Response.ts'
+import { useShiftArray } from '../utils/useShiftArray.ts'
 import { feetToMeters, formatString } from '../utils/utils.ts'
 
 const frApi = new FlightRadar24API()
+
+const { shiftArray: cachedFlights, push: pushCache } = useShiftArray<
+  DetailedFlight
+>()
 
 export const getClosestFlight = async (
   latitude: number,
@@ -31,9 +36,17 @@ export const getClosestFlight = async (
     with: { type: 'json' },
   })
 
-  const detailedFlight = await frApi.getFlightDetails(
-    closestFlight.flight,
-  ) as DetailedFlight
+  let detailedFlight = cachedFlights.find(
+    (cachedFlight) =>
+      cachedFlight.identification?.id === closestFlight.flight.id,
+  )
+
+  if (!detailedFlight) {
+    detailedFlight = await frApi.getFlightDetails(
+      closestFlight.flight,
+    ) as DetailedFlight
+    pushCache(detailedFlight)
+  }
 
   const rawFlight = processFlight(
     detailedFlight,
