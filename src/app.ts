@@ -4,7 +4,7 @@ export interface QueryParams {
   location?: string
   radius?: string
   maxAltitude?: string
-  language?: string
+  language?: 'de' | 'en'
   format?: string
 }
 

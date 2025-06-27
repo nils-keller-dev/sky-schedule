@@ -4,6 +4,13 @@ import { DetailedFlight } from '../models/DetailedFlight.ts'
 import { FormattedFlight, RawFlight, Response } from '../models/Response.ts'
 import { useShiftArray } from '../utils/useShiftArray.ts'
 import { feetToMeters, formatString } from '../utils/utils.ts'
+import airports_de from '../data/airports_de.json' with { type: 'json' }
+import airports_en from '../data/airports_en.json' with { type: 'json' }
+
+const airportLanguageMap = {
+  de: airports_de,
+  en: airports_en,
+}
 
 const frApi = new FlightRadar24API()
 
@@ -16,7 +23,7 @@ export const getClosestFlight = async (
   longitude: number,
   searchRadius: number,
   maxAltitude: number,
-  language: string,
+  language: 'de' | 'en',
   formatStrings: string[],
 ): Promise<Response> => {
   const bounds = frApi.getBoundsByPoint(latitude, longitude, searchRadius)
@@ -32,9 +39,7 @@ export const getClosestFlight = async (
 
   if (!closestFlight) return {}
 
-  const airports = await import(`../data/airports_${language}.json`, {
-    with: { type: 'json' },
-  })
+  const airports = airportLanguageMap[language]
 
   let detailedFlight = cachedFlights.find(
     (cachedFlight) =>
@@ -51,7 +56,7 @@ export const getClosestFlight = async (
   const rawFlight = processFlight(
     detailedFlight,
     closestFlight.flight,
-    airports.default,
+    airports,
   )
 
   return {
