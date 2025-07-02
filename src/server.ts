@@ -1,6 +1,8 @@
 import closestPlane from './app.ts'
 import { verifyClient } from './utils/authentication.ts'
 import { buildLogArray, log } from './utils/utils.ts'
+import presets from '../presets.json' with { type: 'json' }
+import { QueryParams } from './app.ts'
 
 const port = parseInt(Deno.env.get('PORT') ?? '3000')
 const hostname = '0.0.0.0'
@@ -27,13 +29,10 @@ Deno.serve({ port, hostname }, async (request: Request) => {
   const searchParams = new URLSearchParams(fullPath[1])
   const queryObject = Object.fromEntries(searchParams.entries())
 
-  let userConfig = {}
-
-  try {
-    userConfig = (await import(`./configs/${name}.json`, {
-      with: { type: 'json' },
-    })).default
-  } catch (_) {
+  const userConfig = presets[name as keyof typeof presets] as
+    | QueryParams
+    | undefined
+  if (!userConfig) {
     console.log('User config not found')
   }
 
