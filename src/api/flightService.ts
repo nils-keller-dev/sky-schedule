@@ -69,7 +69,7 @@ export const getClosestFlight = async (
 const formatFlight = (
   flight: RawFlight,
   formatStrings: string[],
-): FormattedFlight => {
+) => {
   const keys = [
     'primaryTop',
     'primaryBottom',
@@ -77,16 +77,13 @@ const formatFlight = (
     'secondaryBottom',
   ]
 
-  const returnValue: FormattedFlight = {}
-
-  keys.forEach((key, index) => {
+  return keys.reduce((returnValue, key, index) => {
     returnValue[key as keyof FormattedFlight] = formatString(
       formatStrings[index] ?? '',
       flight,
     )
-  })
-
-  return returnValue
+    return returnValue
+  }, {} as FormattedFlight)
 }
 
 const processFlight = (
